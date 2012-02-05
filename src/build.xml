@@ -14,7 +14,7 @@
     <Configuration>Release</Configuration>
     <Platform>Any CPU</Platform>
   </PropertyGroup>
- 
+  
   
 
   <!-- Used to build the stable master branch -->
