@@ -1,0 +1,6 @@
+
+dist/
+src/AMEE.Tests/bin/*
+src/AMEE.Tests/obj/*
+src/AMEE/bin/*
+src/AMEE/obj/*

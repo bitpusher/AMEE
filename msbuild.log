@@ -1,0 +1,1484 @@
+Build started 2/15/2012 3:49:35 PM.
+Project "C:\dev\CityIndex\AMEE\src\build.xml" on node 1 (default targets).
+Building with tools version "4.0".
+Target "UpdateVersion" in file "C:\dev\CityIndex\AMEE\tools\msbuild\Versioning.targets.xml" from project "C:\dev\CityIndex\AMEE\src\build.xml" (target "Go" depends on it):
+Using "Message" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "Message"
+  Version: 1.0.0-bleeding-0
+Done executing task "Message".
+Using "CreateItem" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "CreateItem"
+Done executing task "CreateItem".
+Task "Message"
+  AssemblyInfos.FullPath='C:\dev\CityIndex\AMEE\src\AMEE\Properties\AssemblyInfo.cs'
+Done executing task "Message".
+Task "Message"
+  AssemblyInfos.FullPath='C:\dev\CityIndex\AMEE\src\AMEE.Tests\Properties\AssemblyInfo.cs'
+Done executing task "Message".
+Using "FileUpdate" task from assembly "C:\Program Files (x86)\MSBuild\MSBuildCommunityTasks\MSBuild.Community.Tasks.dll".
+Task "FileUpdate"
+  Updating File "C:\dev\CityIndex\AMEE\src\AMEE\Properties\AssemblyInfo.cs".
+Done executing task "FileUpdate".
+Task "FileUpdate"
+  Updating File "C:\dev\CityIndex\AMEE\src\AMEE.Tests\Properties\AssemblyInfo.cs".
+Done executing task "FileUpdate".
+Task "FileUpdate"
+  Updating File "C:\dev\CityIndex\AMEE\src\AMEE\Properties\AssemblyInfo.cs".
+Done executing task "FileUpdate".
+Task "FileUpdate"
+  Updating File "C:\dev\CityIndex\AMEE\src\AMEE.Tests\Properties\AssemblyInfo.cs".
+Done executing task "FileUpdate".
+Task "Message"
+  Updating NuGet package version
+Done executing task "Message".
+Task "FileUpdate"
+  Updating File "C:\dev\CityIndex\AMEE\src\..\src\AMEE.nuspec".
+Done executing task "FileUpdate".
+Done building target "UpdateVersion" in project "build.xml".
+Target "Build" in project "C:\dev\CityIndex\AMEE\src\build.xml" (target "Go" depends on it):
+Using "MSBuild" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "MSBuild"
+  Global Properties:
+    Configuration=Debug
+    Platform=Any CPU
+    EnableCodeAnalysis=true
+    GenerateDocumentation=true
+Project "C:\dev\CityIndex\AMEE\src\build.xml" (1) is building "C:\dev\CityIndex\AMEE\src\AMEE.sln" (2) on node 1 (Rebuild target(s)).
+Building with tools version "2.0".
+Target "ValidateSolutionConfiguration" in file "C:\dev\CityIndex\AMEE\src\AMEE.sln.metaproj" from project "C:\dev\CityIndex\AMEE\src\AMEE.sln" (entry point):
+Task "Error" skipped, due to false condition; (('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' != 'true')) was evaluated as (('<SolutionConfiguration>
+  <ProjectConfiguration Project="{3D9E5341-E9EC-4408-803B-EFE1690A532D}" AbsolutePath="C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{8CB471CD-98DC-477F-8EA6-4A28D239DC81}" AbsolutePath="C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>' == '') and ('' != 'true')).
+Task "Warning" skipped, due to false condition; (('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' == 'true')) was evaluated as (('<SolutionConfiguration>
+  <ProjectConfiguration Project="{3D9E5341-E9EC-4408-803B-EFE1690A532D}" AbsolutePath="C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{8CB471CD-98DC-477F-8EA6-4A28D239DC81}" AbsolutePath="C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>' == '') and ('' == 'true')).
+Using "Message" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "Message"
+  Building solution configuration "Debug|Any CPU".
+Done executing task "Message".
+Done building target "ValidateSolutionConfiguration" in project "AMEE.sln".
+Target "ValidateToolsVersions" in file "C:\dev\CityIndex\AMEE\src\AMEE.sln.metaproj" from project "C:\dev\CityIndex\AMEE\src\AMEE.sln" (entry point):
+Task "Error" skipped, due to false condition; ('$(MSBuildToolsVersion)' == '2.0' and ('$(ProjectToolsVersion)' != '2.0' and '$(ProjectToolsVersion)' != '')) was evaluated as ('4.0' == '2.0' and ('' != '2.0' and '' != '')).
+Done building target "ValidateToolsVersions" in project "AMEE.sln".
+Target "ValidateProjects" in file "C:\dev\CityIndex\AMEE\src\AMEE.sln.metaproj" from project "C:\dev\CityIndex\AMEE\src\AMEE.sln" (entry point):
+Done building target "ValidateProjects" in project "AMEE.sln".
+Target "Rebuild" in file "C:\dev\CityIndex\AMEE\src\AMEE.sln.metaproj" from project "C:\dev\CityIndex\AMEE\src\AMEE.sln" (entry point):
+Using "MSBuild" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "MSBuild"
+  Global Properties:
+    BuildingSolutionFile=true
+    CurrentSolutionConfigurationContents=<SolutionConfiguration>
+    <ProjectConfiguration Project="{3D9E5341-E9EC-4408-803B-EFE1690A532D}" AbsolutePath="C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+    <ProjectConfiguration Project="{8CB471CD-98DC-477F-8EA6-4A28D239DC81}" AbsolutePath="C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  </SolutionConfiguration>
+    SolutionDir=C:\dev\CityIndex\AMEE\src\
+    SolutionExt=.sln
+    SolutionFileName=AMEE.sln
+    SolutionName=AMEE
+    SolutionPath=C:\dev\CityIndex\AMEE\src\AMEE.sln
+  Additional Properties for project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj":
+    Configuration=Debug
+    Platform=AnyCPU
+  Additional Properties for project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj":
+    Configuration=Debug
+    Platform=AnyCPU
+Overriding target "GetFrameworkPaths" in project "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" with target "GetFrameworkPaths" from project "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.NETFramework.targets".
+Overriding target "SatelliteDllsProjectOutputGroup" in project "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" with target "SatelliteDllsProjectOutputGroup" from project "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFX.targets".
+Project "C:\dev\CityIndex\AMEE\src\AMEE.sln" (2) is building "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (3) on node 1 (Rebuild target(s)).
+Building with tools version "4.0".
+Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (entry point):
+Task "Error" skipped, due to false condition; ( '$(_InvalidConfigurationError)' == 'true' ) was evaluated as ( '' == 'true' ).
+Task "Warning" skipped, due to false condition; ( '$(_InvalidConfigurationWarning)' == 'true' ) was evaluated as ( '' == 'true' ).
+Task "Message"
+  Configuration=Debug
+Done executing task "Message".
+Task "Message"
+  Platform=AnyCPU
+Done executing task "Message".
+Task "Error" skipped, due to false condition; ('$(OutDir)' != '' and !HasTrailingSlash('$(OutDir)')) was evaluated as ('bin\Debug\' != '' and !HasTrailingSlash('bin\Debug\')).
+Task "Error" skipped, due to false condition; ('$(BaseIntermediateOutputPath)' != '' and !HasTrailingSlash('$(BaseIntermediateOutputPath)')) was evaluated as ('obj\' != '' and !HasTrailingSlash('obj\')).
+Task "Error" skipped, due to false condition; ('$(IntermediateOutputPath)' != '' and !HasTrailingSlash('$(IntermediateOutputPath)')) was evaluated as ('obj\Debug\' != '' and !HasTrailingSlash('obj\Debug\')).
+Done building target "_CheckForInvalidConfigurationAndPlatform" in project "AMEE.csproj".
+Target "BeforeRebuild" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "Rebuild" depends on it):
+Done building target "BeforeRebuild" in project "AMEE.csproj".
+Target "BeforeClean" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "Clean" depends on it):
+Done building target "BeforeClean" in project "AMEE.csproj".
+Target "UnmanagedUnregistration" skipped, due to false condition; ((('$(_AssemblyTimestampBeforeCompile)' != '$(_AssemblyTimestampAfterCompile)' or '$(RegisterForComInterop)' != 'true' or '$(OutputType)' != 'library') or
+                    ('$(_AssemblyTimestampBeforeCompile)' == '')) and
+                   Exists('@(_UnmanagedRegistrationCache)')) was evaluated as ((('' != '' or '' != 'true' or 'Library' != 'library') or
+                    ('' == '')) and
+                   Exists('obj\AMEE.csproj.UnmanagedRegistration.cache')).
+Target "CoreClean" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "Clean" depends on it):
+Using "Delete" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "Delete"
+Done executing task "Delete".
+Using "ReadLinesFromFile" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "ReadLinesFromFile"
+Done executing task "ReadLinesFromFile".
+Using "FindUnderPath" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "FindUnderPath"
+  Comparison path is "bin\Debug\".
+Done executing task "FindUnderPath".
+Task "FindUnderPath"
+  Comparison path is "obj\Debug\".
+Done executing task "FindUnderPath".
+Task "Delete"
+  Deleting file "C:\dev\CityIndex\AMEE\src\AMEE\bin\Debug\AMEE.dll".
+  Deleting file "C:\dev\CityIndex\AMEE\src\AMEE\bin\Debug\AMEE.pdb".
+  Deleting file "C:\dev\CityIndex\AMEE\src\AMEE\bin\Debug\CityIndex.JsonClient.dll".
+  Deleting file "C:\dev\CityIndex\AMEE\src\AMEE\bin\Debug\Newtonsoft.Json.dll".
+  Deleting file "C:\dev\CityIndex\AMEE\src\AMEE\bin\Debug\CityIndex.ReflectiveLoggingAdapter.dll".
+  Deleting file "C:\dev\CityIndex\AMEE\src\AMEE\bin\Debug\CityIndex.JsonClient.pdb".
+  Deleting file "C:\dev\CityIndex\AMEE\src\AMEE\bin\Debug\CityIndex.JsonClient.xml".
+  Deleting file "C:\dev\CityIndex\AMEE\src\AMEE\bin\Debug\Newtonsoft.Json.pdb".
+  Deleting file "C:\dev\CityIndex\AMEE\src\AMEE\bin\Debug\Newtonsoft.Json.xml".
+  Deleting file "C:\dev\CityIndex\AMEE\src\AMEE\bin\Debug\CityIndex.ReflectiveLoggingAdapter.pdb".
+  File "C:\dev\CityIndex\AMEE\src\AMEE\obj\Debug\ResolveAssemblyReference.cache" doesn't exist. Skipping.
+  Deleting file "C:\dev\CityIndex\AMEE\src\AMEE\obj\Debug\AMEE.dll".
+  Deleting file "C:\dev\CityIndex\AMEE\src\AMEE\obj\Debug\AMEE.pdb".
+Done executing task "Delete".
+Using "RemoveDuplicates" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "RemoveDuplicates"
+Done executing task "RemoveDuplicates".
+Using "MakeDir" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "MakeDir"
+Done executing task "MakeDir".
+Using "WriteLinesToFile" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "WriteLinesToFile"
+Done executing task "WriteLinesToFile".
+Done building target "CoreClean" in project "AMEE.csproj".
+Target "AssignProjectConfiguration" skipped, due to false condition; ('@(ProjectReference)'!='') was evaluated as (''!='').
+Target "_SplitProjectReferencesByFileExistence" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "CleanReferencedProjects" depends on it):
+Task "ResolveNonMSBuildProjectOutput" skipped, due to false condition; ('$(BuildingInsideVisualStudio)'=='true' and '@(ProjectReferenceWithConfiguration)'!='') was evaluated as (''=='true' and ''!='').
+Done building target "_SplitProjectReferencesByFileExistence" in project "AMEE.csproj".
+Target "CleanReferencedProjects" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "Clean" depends on it):
+Task "MSBuild" skipped, due to false condition; ('$(BuildingInsideVisualStudio)' != 'true' and '$(BuildProjectReferences)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' != 'true' and 'true' == 'true' and '' != '').
+Done building target "CleanReferencedProjects" in project "AMEE.csproj".
+Target "CleanPublishFolder" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "Clean" depends on it):
+Task "RemoveDir" skipped, due to false condition; ('$(PublishDir)'=='$(OutputPath)app.publish\' and Exists('$(PublishDir)')) was evaluated as ('bin\Debug\app.publish\'=='bin\Debug\app.publish\' and Exists('bin\Debug\app.publish\')).
+Done building target "CleanPublishFolder" in project "AMEE.csproj".
+Target "AfterClean" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "Clean" depends on it):
+Done building target "AfterClean" in project "AMEE.csproj".
+Target "EntityClean" skipped, due to false condition; ('@(EntityDeploy)' != '') was evaluated as ('' != '').
+Target "Clean" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "Rebuild" depends on it):
+Done building target "Clean" in project "AMEE.csproj".
+Target "CheckPrerequisites" in file "C:\dev\CityIndex\AMEE\src\.nuget\nuget.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "RestorePackages" depends on it):
+Task "Error" skipped, due to false condition; (!Exists('$(NuGetExePath)')) was evaluated as (!Exists('C:\dev\CityIndex\AMEE\src\.nuget\nuget.exe')).
+Done building target "CheckPrerequisites" in project "AMEE.csproj".
+Target "RestorePackages" in file "C:\dev\CityIndex\AMEE\src\.nuget\nuget.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "Build" depends on it):
+Using "Exec" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "Exec"
+  "C:\dev\CityIndex\AMEE\src\.nuget\nuget.exe" install "C:\dev\CityIndex\AMEE\src\AMEE\packages.config" -source "" -o "C:\dev\CityIndex\AMEE\src\packages"
+  All packages listed in packages.config are already installed.
+Done executing task "Exec".
+Done building target "RestorePackages" in project "AMEE.csproj".
+Target "EntityDeploy" skipped, due to false condition; ('@(EntityDeploy)' != '') was evaluated as ('' != '').
+Target "BeforeBuild" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "Build" depends on it):
+Done building target "BeforeBuild" in project "AMEE.csproj".
+Target "BuildOnlySettings" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "CoreBuild" depends on it):
+Done building target "BuildOnlySettings" in project "AMEE.csproj".
+Target "GetFrameworkPaths" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.NETFramework.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "PrepareForBuild" depends on it):
+Done building target "GetFrameworkPaths" in project "AMEE.csproj".
+Target "GetWinFXPath" skipped, due to false condition; (('@(Page)' != '' or '@(ApplicationDefinition)' != '' or '@(Resource)' != '') and ('$(GetWinFXNativePath)' != '' or '$(GetWinFXWoWPath)' != '' )) was evaluated as (('' != '' or '' != '' or '' != '') and ('' != '' or '' != '' )).
+Target "GetReferenceAssemblyPaths" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "PrepareForBuild" depends on it):
+Using "GetReferenceAssemblyPaths" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "GetReferenceAssemblyPaths"
+Done executing task "GetReferenceAssemblyPaths".
+Done building target "GetReferenceAssemblyPaths" in project "AMEE.csproj".
+Target "PrepareForBuild" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "CoreBuild" depends on it):
+Using "FindAppConfigFile" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "FindAppConfigFile"
+Done executing task "FindAppConfigFile".
+Task "MakeDir"
+Done executing task "MakeDir".
+Done building target "PrepareForBuild" in project "AMEE.csproj".
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "BeforeResolveReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "ResolveReferences" depends on it):
+Done building target "BeforeResolveReferences" in project "AMEE.csproj".
+Target "AssignProjectConfiguration" skipped, due to false condition; ('@(ProjectReference)'!='') was evaluated as (''!='').
+Target "AssignProjectConfiguration" skipped, due to false condition; ('@(ProjectReference)'!='') was evaluated as (''!='').
+Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
+Target "ResolveProjectReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "ResolveReferences" depends on it):
+Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and ('' == 'true' or 'true' != 'true') and '' != '').
+Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingInsideVisualStudio)' != 'true' and '$(BuildProjectReferences)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and '' != 'true' and 'true' == 'true' and '' != '').
+Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingProject)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and 'true' == 'true' and '' != '').
+Task "Warning" skipped, due to false condition; ('@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceNonexistent)' != '') was evaluated as ('' != '' and '' != '').
+Done building target "ResolveProjectReferences" in project "AMEE.csproj".
+Target "ResolveNativeReferences" skipped, due to false condition; ('@(NativeReference)'!='') was evaluated as (''!='').
+Target "GetFrameworkPaths" skipped. Previously built successfully.
+Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
+Target "PrepareForBuild" skipped. Previously built successfully.
+Target "ResolveAssemblyReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "ResolveReferences" depends on it):
+Using "ResolveAssemblyReference" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "ResolveAssemblyReference"
+  TargetFrameworkMoniker:
+      .NETFramework,Version=v3.5
+  TargetFrameworkMonikerDisplayName:
+      .NETFramework v3.5
+  TargetedRuntimeVersion:
+      v2.0.50727
+  Assemblies:
+      CityIndex.JsonClient
+          HintPath = '..\packages\!CityIndex.JsonClient\lib\net35\CityIndex.JsonClient.dll'
+      Newtonsoft.Json
+          HintPath = '..\packages\Newtonsoft.Json.4.0.7\lib\net35\Newtonsoft.Json.dll'
+      System
+      System.Xml.Linq
+      System.Data.DataSetExtensions
+      System.Data
+      System.Xml
+      System.Core
+  AssemblyFiles:
+      C:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+  CandidateAssemblyFiles:
+  TargetFrameworkDirectories:
+      C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\,C:\Windows\Microsoft.NET\Framework\v3.5\,C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\,C:\Windows\Microsoft.NET\Framework\v3.0\,C:\Windows\Microsoft.NET\Framework\v2.0.50727\
+  InstalledAssemblyTables:
+  IgnoreInstalledAssemblyTable:
+      False
+  SearchPaths:
+      {CandidateAssemblyFiles}
+      {HintPathFromItem}
+      {TargetFrameworkDirectory}
+      {Registry:Software\Microsoft\.NETFramework,v3.5,AssemblyFoldersEx}
+      {AssemblyFolders}
+      {GAC}
+      {RawFileName}
+      bin\Debug\
+  AllowedAssemblyExtensions:
+      .dll
+      .exe
+  AllowedRelatedFileExtensions:
+      .pdb
+      .xml
+  AppConfigFile:
+      
+  AutoUnify:
+      True
+  CopyLocalDependenciesWhenParentReferenceInGac:
+      True
+  FindDependencies:
+      True
+  TargetProcessorArchitecture:
+      x86
+  StateFile:
+      obj\Debug\ResolveAssemblyReference.cache
+  InstalledAssemblySubsetTables:
+  IgnoreInstalledAssemblySubsetTable:
+      False
+  TargetFrameworkSubsets:
+  FullTargetFrameworkSubsetNames:
+      Full
+  ProfileName:
+      
+  ProfileFullFrameworkFolders:
+      C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\
+      C:\Windows\Microsoft.NET\Framework\v3.5\
+      C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\
+      C:\Windows\Microsoft.NET\Framework\v3.0\
+      C:\Windows\Microsoft.NET\Framework\v2.0.50727\
+  LatestTargetFrameworkDirectories:
+  ProfileTablesLocation:
+  Primary reference "mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Resolved file path is "C:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll".
+      Reference found at search path location "C:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll".
+      This reference is not "CopyLocal" because it's a prerequisite file.
+  Primary reference "CityIndex.JsonClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=3accec43ff318fbb".
+      Resolved file path is "C:\dev\CityIndex\AMEE\src\packages\!CityIndex.JsonClient\lib\net35\CityIndex.JsonClient.dll".
+      Reference found at search path location "{HintPathFromItem}".
+      Found related file "C:\dev\CityIndex\AMEE\src\packages\!CityIndex.JsonClient\lib\net35\CityIndex.JsonClient.pdb".
+      Found related file "C:\dev\CityIndex\AMEE\src\packages\!CityIndex.JsonClient\lib\net35\CityIndex.JsonClient.xml".
+  Primary reference "Newtonsoft.Json, Version=4.0.7.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed".
+      Resolved file path is "C:\dev\CityIndex\AMEE\src\packages\Newtonsoft.Json.4.0.7\lib\net35\Newtonsoft.Json.dll".
+      Reference found at search path location "{HintPathFromItem}".
+      Found related file "C:\dev\CityIndex\AMEE\src\packages\Newtonsoft.Json.4.0.7\lib\net35\Newtonsoft.Json.pdb".
+      Found related file "C:\dev\CityIndex\AMEE\src\packages\Newtonsoft.Json.4.0.7\lib\net35\Newtonsoft.Json.xml".
+  Primary reference "System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Resolved file path is "C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.5\System.dll", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.5\System.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\System.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\System.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.0\System.dll", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.0\System.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.exe", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+  Primary reference "System.Xml.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Xml.Linq.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Xml.Linq.exe", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+  Primary reference "System.Data.DataSetExtensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Data.DataSetExtensions.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Data.DataSetExtensions.exe", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+  Primary reference "System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Resolved file path is "C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Data.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Data.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Data.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.5\System.Data.dll", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.5\System.Data.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\System.Data.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\System.Data.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.0\System.Data.dll", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.0\System.Data.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Data.exe", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+  Primary reference "System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Resolved file path is "C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Xml.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Xml.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.5\System.Xml.dll", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.5\System.Xml.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\System.Xml.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\System.Xml.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.0\System.Xml.dll", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.0\System.Xml.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.exe", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+  Primary reference "System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Core.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Core.exe", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+  Dependency "CityIndex.ReflectiveLoggingAdapter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5ebd2761864c547e".
+      Resolved file path is "C:\dev\CityIndex\AMEE\src\packages\!CityIndex.JsonClient\lib\net35\CityIndex.ReflectiveLoggingAdapter.dll".
+      Reference found at search path location "C:\dev\CityIndex\AMEE\src\packages\!CityIndex.JsonClient\lib\net35".
+          For SearchPath "C:\dev\CityIndex\AMEE\src\packages\!CityIndex.JsonClient\lib\net35".
+          Considered "C:\dev\CityIndex\AMEE\src\packages\!CityIndex.JsonClient\lib\net35\CityIndex.ReflectiveLoggingAdapter.exe", but it didn't exist.
+      Required by "CityIndex.JsonClient".
+      Found related file "C:\dev\CityIndex\AMEE\src\packages\!CityIndex.JsonClient\lib\net35\CityIndex.ReflectiveLoggingAdapter.pdb".
+  Dependency "System.Runtime.Serialization, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\System.Runtime.Serialization.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "C:\dev\CityIndex\AMEE\src\packages\Newtonsoft.Json.4.0.7\lib\net35".
+          Considered "C:\dev\CityIndex\AMEE\src\packages\Newtonsoft.Json.4.0.7\lib\net35\System.Runtime.Serialization.dll", but it didn't exist.
+          Considered "C:\dev\CityIndex\AMEE\src\packages\Newtonsoft.Json.4.0.7\lib\net35\System.Runtime.Serialization.exe", but it didn't exist.
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Runtime.Serialization.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Runtime.Serialization.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.5\System.Runtime.Serialization.dll", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.5\System.Runtime.Serialization.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\System.Runtime.Serialization.exe", but it didn't exist.
+      Required by "CityIndex.JsonClient".
+      Required by "Newtonsoft.Json".
+      This reference is not "CopyLocal" because it's in a Frameworks directory.
+Done executing task "ResolveAssemblyReference".
+Done building target "ResolveAssemblyReferences" in project "AMEE.csproj".
+Target "ResolveComReferences" skipped, due to false condition; ('@(COMReference)'!='' or '@(COMFileReference)'!='') was evaluated as (''!='' or ''!='').
+Target "AfterResolveReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "ResolveReferences" depends on it):
+Done building target "AfterResolveReferences" in project "AMEE.csproj".
+Target "ResolveTestReferences" skipped, due to false condition; ('@(Shadow)'!='') was evaluated as (''!='').
+Target "ResolveReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "CoreBuild" depends on it):
+Done building target "ResolveReferences" in project "AMEE.csproj".
+Target "MarkupCompilePass1" skipped, due to false condition; ('@(Page)' != '' or '@(ApplicationDefinition)' != '' ) was evaluated as ('' != '' or '' != '' ).
+Target "AfterMarkupCompilePass1" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFX.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "PrepareResources" depends on it):
+Done building target "AfterMarkupCompilePass1" in project "AMEE.csproj".
+Target "MarkupCompilePass2ForMainAssembly" skipped, due to false condition; ('$(_RequireMCPass2ForMainAssembly)' == 'true' ) was evaluated as ('false' == 'true' ).
+Target "FileClassification" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFX.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "PrepareResources" depends on it):
+Task "FileClassifier" skipped, due to false condition; ('@(GeneratedBaml)' != '' or '@(Resource)' != '' or '@(Font)' != '') was evaluated as ('' != '' or '' != '' or '' != '').
+Task "Message" skipped, due to false condition; ('$(MSBuildTargetsVerbose)'=='true') was evaluated as (''=='true').
+Task "Message" skipped, due to false condition; ('$(MSBuildTargetsVerbose)'=='true') was evaluated as (''=='true').
+Done building target "FileClassification" in project "AMEE.csproj".
+Target "MainResourcesGeneration" skipped, due to false condition; ('@(MainEmbeddedFiles)' != '') was evaluated as ('' != '').
+Target "AssignWinFXEmbeddedResource" skipped, due to false condition; ('@(WinFXEmbeddedResource)' != '') was evaluated as ('' != '').
+Target "AssignTargetPaths" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "PrepareResourceNames" depends on it):
+Using "AssignTargetPath" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "AssignTargetPath"
+Done executing task "AssignTargetPath".
+Task "AssignTargetPath"
+Done executing task "AssignTargetPath".
+Task "AssignTargetPath"
+Done executing task "AssignTargetPath".
+Task "AssignTargetPath"
+Done executing task "AssignTargetPath".
+Task "AssignTargetPath" skipped, due to false condition; ('@(_DeploymentBaseManifestWithTargetPath)'=='' and '%(None.Extension)'=='.manifest') was evaluated as (''=='' and '.config'=='.manifest').
+Done building target "AssignTargetPaths" in project "AMEE.csproj".
+Target "AssignTargetPaths" skipped. Previously built successfully.
+Target "SplitResourcesByCulture" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "PrepareResourceNames" depends on it):
+Task "Warning" skipped, due to false condition; ('@(ResxWithNoCulture)'!='') was evaluated as (''!='').
+Task "Warning" skipped, due to false condition; ('@(ResxWithCulture)'!='') was evaluated as (''!='').
+Task "Warning" skipped, due to false condition; ('@(NonResxWithCulture)'!='') was evaluated as (''!='').
+Task "Warning" skipped, due to false condition; ('@(NonResxWithNoCulture)'!='') was evaluated as (''!='').
+Using "AssignCulture" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "AssignCulture"
+Done executing task "AssignCulture".
+Done building target "SplitResourcesByCulture" in project "AMEE.csproj".
+Target "CreateManifestResourceNames" skipped, due to false condition; ('@(EmbeddedResource)' != '') was evaluated as ('' != '').
+Target "CreateCustomManifestResourceNames" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "PrepareResourceNames" depends on it):
+Done building target "CreateCustomManifestResourceNames" in project "AMEE.csproj".
+Target "PrepareResourceNames" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "PrepareResources" depends on it):
+Done building target "PrepareResourceNames" in project "AMEE.csproj".
+Target "ResolveAssemblyReferences" skipped. Previously built successfully.
+Target "SplitResourcesByCulture" skipped. Previously built successfully.
+Target "BeforeResGen" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "ResGen" depends on it):
+Done building target "BeforeResGen" in project "AMEE.csproj".
+Target "CoreResGen" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "ResGen" depends on it):
+Task "GenerateResource" skipped, due to false condition; ('%(EmbeddedResource.Type)' == 'Resx' and '%(EmbeddedResource.GenerateResource)' != 'false') was evaluated as ('' == 'Resx' and '' != 'false').
+Done building target "CoreResGen" in project "AMEE.csproj".
+Target "AfterResGen" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "ResGen" depends on it):
+Done building target "AfterResGen" in project "AMEE.csproj".
+Target "ResGen" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "PrepareResources" depends on it):
+Done building target "ResGen" in project "AMEE.csproj".
+Target "CompileLicxFiles" skipped, due to false condition; ('@(_LicxFile)'!='') was evaluated as (''!='').
+Target "PrepareRdlFiles" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\ReportingServices\Microsoft.ReportingServices.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "CompileRdlFiles" depends on it):
+Task "CreateItem" skipped, due to false condition; ('%(Extension)'=='.rdlc') was evaluated as (''=='.rdlc').
+Done building target "PrepareRdlFiles" in project "AMEE.csproj".
+Target "RunRdlCompiler" skipped, due to false condition; ('@(RdlFile)'!='') was evaluated as (''!='').
+Target "CompileRdlFiles" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\ReportingServices\Microsoft.ReportingServices.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "PrepareResources" depends on it):
+Done building target "CompileRdlFiles" in project "AMEE.csproj".
+Target "PrepareResources" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "CoreBuild" depends on it):
+Done building target "PrepareResources" in project "AMEE.csproj".
+Target "ResolveKeySource" skipped, due to false condition; ($(SignManifests) == 'true' or $(SignAssembly) == 'true') was evaluated as ( == 'true' or  == 'true').
+Target "ResolveReferences" skipped. Previously built successfully.
+Target "ResolveKeySource" skipped, due to false condition; ($(SignManifests) == 'true' or $(SignAssembly) == 'true') was evaluated as ( == 'true' or  == 'true').
+Target "ResolveComReferences" skipped, due to false condition; ('@(COMReference)'!='' or '@(COMFileReference)'!='') was evaluated as (''!='' or ''!='').
+Target "ResolveNativeReferences" skipped, due to false condition; ('@(NativeReference)'!='') was evaluated as (''!='').
+Target "_SetExternalWin32ManifestProperties" skipped, due to false condition; ('$(GenerateClickOnceManifests)'=='true' or '@(NativeReference)'!='' or '@(ResolvedIsolatedComModules)'!='') was evaluated as (''=='true' or ''!='' or ''!='').
+Target "_SetEmbeddedWin32ManifestProperties" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "SetWin32ManifestProperties" depends on it):
+Using "GetFrameworkPath" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "GetFrameworkPath"
+Done executing task "GetFrameworkPath".
+Done building target "_SetEmbeddedWin32ManifestProperties" in project "AMEE.csproj".
+Target "SetWin32ManifestProperties" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "Compile" depends on it):
+Done building target "SetWin32ManifestProperties" in project "AMEE.csproj".
+Target "_GenerateCompileInputs" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "Compile" depends on it):
+Task "Warning" skipped, due to false condition; ('@(ManifestResourceWithNoCulture)'!='' and '%(ManifestResourceWithNoCulture.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+Task "Warning" skipped, due to false condition; ('@(ManifestNonResxWithNoCultureOnDisk)'!='' and '%(ManifestNonResxWithNoCultureOnDisk.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+Done building target "_GenerateCompileInputs" in project "AMEE.csproj".
+Target "GenerateTargetFrameworkMonikerAttribute" skipped, due to false condition; ('$(GenerateTargetFrameworkAttribute)' == 'true') was evaluated as ('' == 'true').
+Target "_SetTargetFrameworkMonikerAttribute" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.CSharp.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "GenerateTargetFrameworkMonikerAttribute" depends on it):
+Done building target "_SetTargetFrameworkMonikerAttribute" in project "AMEE.csproj".
+Target "GenerateAdditionalSources" skipped, due to false condition; ('@(AssemblyAttributes)' != '' and '$(GenerateAdditionalSources)' == 'true') was evaluated as ('' != '' and '' == 'true').
+Target "BeforeCompile" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "Compile" depends on it):
+Done building target "BeforeCompile" in project "AMEE.csproj".
+Target "_TimeStampBeforeCompile" skipped, due to false condition; ('$(RunPostBuildEvent)'=='OnOutputUpdated' or ('$(RegisterForComInterop)'=='true' and '$(OutputType)'=='library')) was evaluated as (''=='OnOutputUpdated' or (''=='true' and 'Library'=='library')).
+Target "_ComputeNonExistentFileProperty" skipped, due to false condition; (('$(BuildingInsideVisualStudio)' == 'true') and (('$(BuildingProject)' == 'false') or ('$(UseHostCompilerIfAvailable)' == 'true'))) was evaluated as (('' == 'true') and (('true' == 'false') or ('true' == 'true'))).
+Target "CoreCompile" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.CSharp.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "Compile" depends on it):
+Building target "CoreCompile" completely.
+Output file "obj\Debug\AMEE.dll" does not exist.
+Using "Csc" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "Csc"
+  C:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:DEBUG;TRACE /reference:"C:\dev\CityIndex\AMEE\src\packages\!CityIndex.JsonClient\lib\net35\CityIndex.JsonClient.dll" /reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll /reference:C:\dev\CityIndex\AMEE\src\packages\Newtonsoft.Json.4.0.7\lib\net35\Newtonsoft.Json.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Data.DataSetExtensions.dll" /reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll /reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Xml.Linq.dll" /debug+ /debug:full /filealign:512 /optimize- /out:obj\Debug\AMEE.dll /target:library NullResponse.cs Client.cs Model\Amount.cs Model\Amounts.cs Model\Auth.cs Model\CalculateResponse.cs Model\ChoicesCollection.cs Model\CreateProfileResponse.cs Model\DataCategory.cs Model\DataCategoryResponse.cs Model\DataItem.cs Model\DataItemResponse.cs Model\DrillDownResponse.cs Model\DataItems.cs Model\Environment.cs Model\DeleteProfileResponse.cs Model\GetProfilesResponse.cs Model\Group.cs Model\ItemDefinition.cs Model\ItemValue.cs Model\ItemValueDefinition.cs Model\Note.cs Model\Permission.cs Model\Profile.cs Model\User.cs Model\ValueDefinition.cs Model\ValueItem.cs Util\Pager.cs Model\Constants.cs Properties\AssemblyInfo.cs
+  Microsoft (R) Visual C# 2010 Compiler version 4.0.30319.1
+  Copyright (C) Microsoft Corporation. All rights reserved.
+  
+Done executing task "Csc".
+Task "CallTarget" skipped, due to false condition; ('$(TargetsTriggeredByCompilation)' != '') was evaluated as ('' != '').
+Done building target "CoreCompile" in project "AMEE.csproj".
+Target "_TimeStampAfterCompile" skipped, due to false condition; ('$(RunPostBuildEvent)'=='OnOutputUpdated' or ('$(RegisterForComInterop)'=='true' and '$(OutputType)'=='library')) was evaluated as (''=='OnOutputUpdated' or (''=='true' and 'Library'=='library')).
+Target "AfterCompile" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "Compile" depends on it):
+Done building target "AfterCompile" in project "AMEE.csproj".
+Target "PrepareResourcesForSatelliteAssemblies" skipped, due to false condition; ('$(UICulture)' != '') was evaluated as ('' != '').
+Target "MergeLocalizationDirectives" skipped, due to false condition; ('@(GeneratedLocalizationFiles)' !='') was evaluated as ('' !='').
+Target "AfterCompileWinFX" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFX.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "_AfterCompileWinFXInternal" depends on it):
+Done building target "AfterCompileWinFX" in project "AMEE.csproj".
+Target "_AfterCompileWinFXInternal" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFX.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "Compile" depends on it):
+Done building target "_AfterCompileWinFXInternal" in project "AMEE.csproj".
+Target "Compile" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "CoreBuild" depends on it):
+Done building target "Compile" in project "AMEE.csproj".
+Target "UnmanagedUnregistration" skipped, due to false condition; ((('$(_AssemblyTimestampBeforeCompile)' != '$(_AssemblyTimestampAfterCompile)' or '$(RegisterForComInterop)' != 'true' or '$(OutputType)' != 'library') or
+                    ('$(_AssemblyTimestampBeforeCompile)' == '')) and
+                   Exists('@(_UnmanagedRegistrationCache)')) was evaluated as ((('' != '' or '' != 'true' or 'Library' != 'library') or
+                    ('' == '')) and
+                   Exists('obj\AMEE.csproj.UnmanagedRegistration.cache')).
+Target "GenerateSerializationAssemblies" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
+Target "_GenerateSatelliteAssemblyInputs" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "CreateSatelliteAssemblies" depends on it):
+Task "Warning" skipped, due to false condition; ('@(ManifestResourceWithCulture)'!='' and '%(ManifestResourceWithCulture.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+Task "Warning" skipped, due to false condition; ('@(ManifestNonResxWithCultureOnDisk)'!='' and '%(ManifestNonResxWithCultureOnDisk.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+Done building target "_GenerateSatelliteAssemblyInputs" in project "AMEE.csproj".
+Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(EmbeddedResource->'%(WithCulture)') != '') was evaluated as ( != '').
+Target "GenerateSatelliteAssemblies" skipped, due to false condition; ('@(_SatelliteAssemblyResourceInputs)' != '') was evaluated as ('' != '').
+Target "CreateSatelliteAssemblies" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "CoreBuild" depends on it):
+Done building target "CreateSatelliteAssemblies" in project "AMEE.csproj".
+Target "GenerateManifests" skipped, due to false condition; ('$(GenerateClickOnceManifests)'=='true' or '@(NativeReference)'!='' or '@(ResolvedIsolatedComModules)'!='') was evaluated as (''=='true' or ''!='' or ''!='').
+Target "GetTargetPath" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "CoreBuild" depends on it):
+Done building target "GetTargetPath" in project "AMEE.csproj".
+Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(EmbeddedResource->'%(WithCulture)') != '') was evaluated as ( != '').
+Target "_CopyFilesMarkedCopyLocal" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "CopyFilesToOutputDirectory" depends on it):
+Using "Copy" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "Copy"
+  Copying file from "C:\dev\CityIndex\AMEE\src\packages\!CityIndex.JsonClient\lib\net35\CityIndex.JsonClient.dll" to "bin\Debug\CityIndex.JsonClient.dll".
+  Copying file from "C:\dev\CityIndex\AMEE\src\packages\Newtonsoft.Json.4.0.7\lib\net35\Newtonsoft.Json.dll" to "bin\Debug\Newtonsoft.Json.dll".
+  Copying file from "C:\dev\CityIndex\AMEE\src\packages\!CityIndex.JsonClient\lib\net35\CityIndex.ReflectiveLoggingAdapter.dll" to "bin\Debug\CityIndex.ReflectiveLoggingAdapter.dll".
+  Copying file from "C:\dev\CityIndex\AMEE\src\packages\!CityIndex.JsonClient\lib\net35\CityIndex.JsonClient.pdb" to "bin\Debug\CityIndex.JsonClient.pdb".
+  Copying file from "C:\dev\CityIndex\AMEE\src\packages\!CityIndex.JsonClient\lib\net35\CityIndex.JsonClient.xml" to "bin\Debug\CityIndex.JsonClient.xml".
+  Copying file from "C:\dev\CityIndex\AMEE\src\packages\Newtonsoft.Json.4.0.7\lib\net35\Newtonsoft.Json.pdb" to "bin\Debug\Newtonsoft.Json.pdb".
+  Copying file from "C:\dev\CityIndex\AMEE\src\packages\Newtonsoft.Json.4.0.7\lib\net35\Newtonsoft.Json.xml" to "bin\Debug\Newtonsoft.Json.xml".
+  Copying file from "C:\dev\CityIndex\AMEE\src\packages\!CityIndex.JsonClient\lib\net35\CityIndex.ReflectiveLoggingAdapter.pdb" to "bin\Debug\CityIndex.ReflectiveLoggingAdapter.pdb".
+Done executing task "Copy".
+Done building target "_CopyFilesMarkedCopyLocal" in project "AMEE.csproj".
+Target "AssignTargetPaths" skipped. Previously built successfully.
+Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
+Target "GetCopyToOutputDirectoryItems" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "_CopySourceItemsToOutputDirectory" depends on it):
+Task "MSBuild" skipped, due to false condition; ('@(_MSBuildProjectReferenceExistent)' != '' and '$(_GetChildProjectCopyToOutputDirectoryItems)' == 'true' and '%(_MSBuildProjectReferenceExistent.Private)' != 'false' and '$(UseCommonOutputDirectory)' != 'true') was evaluated as ('' != '' and 'true' == 'true' and '' != 'false' and 'false' != 'true').
+Task "AssignTargetPath"
+Done executing task "AssignTargetPath".
+Done building target "GetCopyToOutputDirectoryItems" in project "AMEE.csproj".
+Target "_CopyOutOfDateSourceItemsToOutputDirectory" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectory)' != '' ) was evaluated as ( '' != '' ).
+Target "_CopyOutOfDateSourceItemsToOutputDirectoryAlways" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectoryAlways)' != '' ) was evaluated as ( '' != '' ).
+Target "_CopySourceItemsToOutputDirectory" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "CopyFilesToOutputDirectory" depends on it):
+Done building target "_CopySourceItemsToOutputDirectory" in project "AMEE.csproj".
+Target "_CopyAppConfigFile" skipped, due to false condition; ( '@(AppConfigWithTargetPath)' != '' ) was evaluated as ( '' != '' ).
+Target "_CopyManifestFiles" skipped, due to false condition; ( '$(_DeploymentCopyApplicationManifest)'=='true' or '$(GenerateClickOnceManifests)'=='true' ) was evaluated as ( ''=='true' or ''=='true' ).
+Target "_CheckForCompileOutputs" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "CopyFilesToOutputDirectory" depends on it):
+Done building target "_CheckForCompileOutputs" in project "AMEE.csproj".
+Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
+Target "CopyFilesToOutputDirectory" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "PrepareForRun" depends on it):
+Task "Copy"
+  Copying file from "obj\Debug\AMEE.dll" to "bin\Debug\AMEE.dll".
+Done executing task "Copy".
+Task "Message"
+  AMEE -> C:\dev\CityIndex\AMEE\src\AMEE\bin\Debug\AMEE.dll
+Done executing task "Message".
+Task "Copy" skipped, due to false condition; ('@(AddModules)' != '') was evaluated as ('' != '').
+Task "Copy" skipped, due to false condition; ('$(_SGenDllCreated)'=='true') was evaluated as ('false'=='true').
+Task "Copy"
+  Copying file from "obj\Debug\AMEE.pdb" to "bin\Debug\AMEE.pdb".
+Done executing task "Copy".
+Task "Copy" skipped, due to false condition; ('$(_DocumentationFileProduced)'=='true') was evaluated as ('false'=='true').
+Task "Copy" skipped, due to false condition; ('@(IntermediateSatelliteAssembliesWithTargetPath)' != '') was evaluated as ('' != '').
+Task "Copy" skipped, due to false condition; ('@(ReferenceComWrappersToCopyLocal)' != '' or '@(ResolvedIsolatedComModules)' != '' or '@(_DeploymentLooseManifestFile)' != '' or '@(NativeReferenceFile)' != '' ) was evaluated as ('' != '' or '' != '' or '' != '' or '' != '' ).
+Done building target "CopyFilesToOutputDirectory" in project "AMEE.csproj".
+Target "RunCodeAnalysis" skipped, due to false condition; ('$(RunCodeAnalysis)'=='true' or '$(RunCodeAnalysisOnce)'=='true') was evaluated as (''=='true' or ''=='true').
+Target "PrepareForRun" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "CoreBuild" depends on it):
+Done building target "PrepareForRun" in project "AMEE.csproj".
+Target "UnmanagedRegistration" skipped, due to false condition; ('$(RegisterForComInterop)'=='true' and '$(OutputType)'=='library') was evaluated as (''=='true' and 'Library'=='library').
+Target "_CheckForCompileOutputs" skipped. Previously built successfully.
+Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
+Target "_CleanGetCurrentAndPriorFileWrites" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "IncrementalClean" depends on it):
+Task "ReadLinesFromFile"
+Done executing task "ReadLinesFromFile".
+Using "ConvertToAbsolutePath" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "ConvertToAbsolutePath"
+Done executing task "ConvertToAbsolutePath".
+Task "FindUnderPath"
+  Comparison path is "C:\dev\CityIndex\AMEE\src\AMEE".
+Done executing task "FindUnderPath".
+Task "FindUnderPath"
+  Comparison path is "bin\Debug\".
+Done executing task "FindUnderPath".
+Task "FindUnderPath"
+  Comparison path is "obj\Debug\".
+Done executing task "FindUnderPath".
+Task "RemoveDuplicates"
+Done executing task "RemoveDuplicates".
+Done building target "_CleanGetCurrentAndPriorFileWrites" in project "AMEE.csproj".
+Target "IncrementalClean" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "CoreBuild" depends on it):
+Task "FindUnderPath"
+  Comparison path is "bin\Debug\".
+Done executing task "FindUnderPath".
+Task "FindUnderPath"
+  Comparison path is "obj\Debug\".
+Done executing task "FindUnderPath".
+Task "Delete"
+Done executing task "Delete".
+Task "RemoveDuplicates"
+Done executing task "RemoveDuplicates".
+Task "WriteLinesToFile"
+Done executing task "WriteLinesToFile".
+Done building target "IncrementalClean" in project "AMEE.csproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '' and ('$(RunPostBuildEvent)' != 'OnOutputUpdated' or '$(_AssemblyTimestampBeforeCompile)' != '$(_AssemblyTimestampAfterCompile)')) was evaluated as ('' != '' and ('' != 'OnOutputUpdated' or '' != '')).
+Target "CoreBuild" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "Build" depends on it):
+Done building target "CoreBuild" in project "AMEE.csproj".
+Target "AfterBuild" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "Build" depends on it):
+Done building target "AfterBuild" in project "AMEE.csproj".
+Target "Build" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "Rebuild" depends on it):
+Done building target "Build" in project "AMEE.csproj".
+Target "AfterRebuild" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (target "Rebuild" depends on it):
+Done building target "AfterRebuild" in project "AMEE.csproj".
+Target "Rebuild" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (entry point):
+Done building target "Rebuild" in project "AMEE.csproj".
+Done Building Project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (Rebuild target(s)).
+
+Overriding target "GetFrameworkPaths" in project "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" with target "GetFrameworkPaths" from project "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.NETFramework.targets".
+Overriding target "SatelliteDllsProjectOutputGroup" in project "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" with target "SatelliteDllsProjectOutputGroup" from project "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFX.targets".
+Project "C:\dev\CityIndex\AMEE\src\AMEE.sln" (2) is building "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (4) on node 1 (Rebuild target(s)).
+Building with tools version "4.0".
+Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (entry point):
+Task "Error" skipped, due to false condition; ( '$(_InvalidConfigurationError)' == 'true' ) was evaluated as ( '' == 'true' ).
+Task "Warning" skipped, due to false condition; ( '$(_InvalidConfigurationWarning)' == 'true' ) was evaluated as ( '' == 'true' ).
+Task "Message"
+  Configuration=Debug
+Done executing task "Message".
+Task "Message"
+  Platform=AnyCPU
+Done executing task "Message".
+Task "Error" skipped, due to false condition; ('$(OutDir)' != '' and !HasTrailingSlash('$(OutDir)')) was evaluated as ('bin\Debug\' != '' and !HasTrailingSlash('bin\Debug\')).
+Task "Error" skipped, due to false condition; ('$(BaseIntermediateOutputPath)' != '' and !HasTrailingSlash('$(BaseIntermediateOutputPath)')) was evaluated as ('obj\' != '' and !HasTrailingSlash('obj\')).
+Task "Error" skipped, due to false condition; ('$(IntermediateOutputPath)' != '' and !HasTrailingSlash('$(IntermediateOutputPath)')) was evaluated as ('obj\Debug\' != '' and !HasTrailingSlash('obj\Debug\')).
+Done building target "_CheckForInvalidConfigurationAndPlatform" in project "AMEE.Tests.csproj".
+Target "BeforeRebuild" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "Rebuild" depends on it):
+Done building target "BeforeRebuild" in project "AMEE.Tests.csproj".
+Target "BeforeClean" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "Clean" depends on it):
+Done building target "BeforeClean" in project "AMEE.Tests.csproj".
+Target "UnmanagedUnregistration" skipped, due to false condition; ((('$(_AssemblyTimestampBeforeCompile)' != '$(_AssemblyTimestampAfterCompile)' or '$(RegisterForComInterop)' != 'true' or '$(OutputType)' != 'library') or
+                    ('$(_AssemblyTimestampBeforeCompile)' == '')) and
+                   Exists('@(_UnmanagedRegistrationCache)')) was evaluated as ((('' != '' or '' != 'true' or 'Library' != 'library') or
+                    ('' == '')) and
+                   Exists('obj\AMEE.Tests.csproj.UnmanagedRegistration.cache')).
+Target "CoreClean" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "Clean" depends on it):
+Task "Delete"
+Done executing task "Delete".
+Task "ReadLinesFromFile"
+Done executing task "ReadLinesFromFile".
+Task "FindUnderPath"
+  Comparison path is "bin\Debug\".
+Done executing task "FindUnderPath".
+Task "FindUnderPath"
+  Comparison path is "obj\Debug\".
+Done executing task "FindUnderPath".
+Task "Delete"
+  Deleting file "C:\dev\CityIndex\AMEE\src\AMEE.Tests\bin\Debug\AMEE.Tests.dll".
+  Deleting file "C:\dev\CityIndex\AMEE\src\AMEE.Tests\bin\Debug\AMEE.Tests.pdb".
+  Deleting file "C:\dev\CityIndex\AMEE\src\AMEE.Tests\bin\Debug\AMEE.dll".
+  Deleting file "C:\dev\CityIndex\AMEE\src\AMEE.Tests\bin\Debug\CityIndex.JsonClient.dll".
+  Deleting file "C:\dev\CityIndex\AMEE\src\AMEE.Tests\bin\Debug\Newtonsoft.Json.dll".
+  Deleting file "C:\dev\CityIndex\AMEE\src\AMEE.Tests\bin\Debug\nunit.framework.dll".
+  Deleting file "C:\dev\CityIndex\AMEE\src\AMEE.Tests\bin\Debug\nunit.mocks.dll".
+  Deleting file "C:\dev\CityIndex\AMEE\src\AMEE.Tests\bin\Debug\pnunit.framework.dll".
+  Deleting file "C:\dev\CityIndex\AMEE\src\AMEE.Tests\bin\Debug\CityIndex.ReflectiveLoggingAdapter.dll".
+  Deleting file "C:\dev\CityIndex\AMEE\src\AMEE.Tests\bin\Debug\AMEE.pdb".
+  Deleting file "C:\dev\CityIndex\AMEE\src\AMEE.Tests\bin\Debug\CityIndex.JsonClient.pdb".
+  Deleting file "C:\dev\CityIndex\AMEE\src\AMEE.Tests\bin\Debug\CityIndex.JsonClient.xml".
+  Deleting file "C:\dev\CityIndex\AMEE\src\AMEE.Tests\bin\Debug\Newtonsoft.Json.pdb".
+  Deleting file "C:\dev\CityIndex\AMEE\src\AMEE.Tests\bin\Debug\Newtonsoft.Json.xml".
+  Deleting file "C:\dev\CityIndex\AMEE\src\AMEE.Tests\bin\Debug\nunit.framework.xml".
+  Deleting file "C:\dev\CityIndex\AMEE\src\AMEE.Tests\bin\Debug\CityIndex.ReflectiveLoggingAdapter.pdb".
+  Deleting file "C:\dev\CityIndex\AMEE\src\AMEE.Tests\obj\Debug\ResolveAssemblyReference.cache".
+  Deleting file "C:\dev\CityIndex\AMEE\src\AMEE.Tests\obj\Debug\AMEE.Tests.dll".
+  Deleting file "C:\dev\CityIndex\AMEE\src\AMEE.Tests\obj\Debug\AMEE.Tests.pdb".
+Done executing task "Delete".
+Task "RemoveDuplicates"
+Done executing task "RemoveDuplicates".
+Task "MakeDir"
+Done executing task "MakeDir".
+Task "WriteLinesToFile"
+Done executing task "WriteLinesToFile".
+Done building target "CoreClean" in project "AMEE.Tests.csproj".
+Target "AssignProjectConfiguration" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "CleanReferencedProjects" depends on it):
+Using "AssignProjectConfiguration" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "AssignProjectConfiguration"
+  Project reference "..\AMEE\AMEE.csproj" has been assigned the "Debug|AnyCPU" configuration.
+Done executing task "AssignProjectConfiguration".
+Done building target "AssignProjectConfiguration" in project "AMEE.Tests.csproj".
+Target "_SplitProjectReferencesByFileExistence" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "CleanReferencedProjects" depends on it):
+Task "ResolveNonMSBuildProjectOutput" skipped, due to false condition; ('$(BuildingInsideVisualStudio)'=='true' and '@(ProjectReferenceWithConfiguration)'!='') was evaluated as (''=='true' and '..\AMEE\AMEE.csproj'!='').
+Done building target "_SplitProjectReferencesByFileExistence" in project "AMEE.Tests.csproj".
+Target "CleanReferencedProjects" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "Clean" depends on it):
+Task "MSBuild"
+  Global Properties:
+    Configuration=Debug
+    Platform=AnyCPU
+Project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (4) is building "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (3:2) on node 1 (Clean target(s)).
+Building with tools version "4.0".
+Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
+Target "Clean" skipped. Previously built successfully.
+Done Building Project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (Clean target(s)).
+
+Done executing task "MSBuild".
+Done building target "CleanReferencedProjects" in project "AMEE.Tests.csproj".
+Target "CleanPublishFolder" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "Clean" depends on it):
+Task "RemoveDir" skipped, due to false condition; ('$(PublishDir)'=='$(OutputPath)app.publish\' and Exists('$(PublishDir)')) was evaluated as ('bin\Debug\app.publish\'=='bin\Debug\app.publish\' and Exists('bin\Debug\app.publish\')).
+Done building target "CleanPublishFolder" in project "AMEE.Tests.csproj".
+Target "AfterClean" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "Clean" depends on it):
+Done building target "AfterClean" in project "AMEE.Tests.csproj".
+Target "EntityClean" skipped, due to false condition; ('@(EntityDeploy)' != '') was evaluated as ('' != '').
+Target "Clean" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "Rebuild" depends on it):
+Done building target "Clean" in project "AMEE.Tests.csproj".
+Target "CheckPrerequisites" in file "C:\dev\CityIndex\AMEE\src\.nuget\nuget.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "RestorePackages" depends on it):
+Task "Error" skipped, due to false condition; (!Exists('$(NuGetExePath)')) was evaluated as (!Exists('C:\dev\CityIndex\AMEE\src\.nuget\nuget.exe')).
+Done building target "CheckPrerequisites" in project "AMEE.Tests.csproj".
+Target "RestorePackages" in file "C:\dev\CityIndex\AMEE\src\.nuget\nuget.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "Build" depends on it):
+Task "Exec"
+  "C:\dev\CityIndex\AMEE\src\.nuget\nuget.exe" install "C:\dev\CityIndex\AMEE\src\AMEE.Tests\packages.config" -source "" -o "C:\dev\CityIndex\AMEE\src\packages"
+  All packages listed in packages.config are already installed.
+Done executing task "Exec".
+Done building target "RestorePackages" in project "AMEE.Tests.csproj".
+Target "EntityDeploy" skipped, due to false condition; ('@(EntityDeploy)' != '') was evaluated as ('' != '').
+Target "BeforeBuild" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "Build" depends on it):
+Done building target "BeforeBuild" in project "AMEE.Tests.csproj".
+Target "BuildOnlySettings" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "CoreBuild" depends on it):
+Done building target "BuildOnlySettings" in project "AMEE.Tests.csproj".
+Target "GetFrameworkPaths" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.NETFramework.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "PrepareForBuild" depends on it):
+Done building target "GetFrameworkPaths" in project "AMEE.Tests.csproj".
+Target "GetWinFXPath" skipped, due to false condition; (('@(Page)' != '' or '@(ApplicationDefinition)' != '' or '@(Resource)' != '') and ('$(GetWinFXNativePath)' != '' or '$(GetWinFXWoWPath)' != '' )) was evaluated as (('' != '' or '' != '' or '' != '') and ('' != '' or '' != '' )).
+Target "GetReferenceAssemblyPaths" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "PrepareForBuild" depends on it):
+Task "GetReferenceAssemblyPaths"
+Done executing task "GetReferenceAssemblyPaths".
+Done building target "GetReferenceAssemblyPaths" in project "AMEE.Tests.csproj".
+Target "PrepareForBuild" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "CoreBuild" depends on it):
+Task "FindAppConfigFile"
+Done executing task "FindAppConfigFile".
+Task "MakeDir"
+Done executing task "MakeDir".
+Done building target "PrepareForBuild" in project "AMEE.Tests.csproj".
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "BeforeResolveReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "ResolveReferences" depends on it):
+Done building target "BeforeResolveReferences" in project "AMEE.Tests.csproj".
+Target "AssignProjectConfiguration" skipped. Previously built successfully.
+Target "AssignProjectConfiguration" skipped. Previously built successfully.
+Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
+Target "ResolveProjectReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "ResolveReferences" depends on it):
+Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('true' == 'true' and '..\AMEE\AMEE.csproj' != '' and ('' == 'true' or 'true' != 'true') and '..\AMEE\AMEE.csproj' != '').
+Task "MSBuild"
+  Global Properties:
+    Configuration=Debug
+    Platform=AnyCPU
+Project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (4) is building "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (3:3) on node 1 (default targets).
+Building with tools version "4.0".
+Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
+Target "Build" skipped. Previously built successfully.
+Done Building Project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (default targets).
+
+Done executing task "MSBuild".
+Task "MSBuild"
+  Global Properties:
+    Configuration=Debug
+    Platform=AnyCPU
+Project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (4) is building "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (3:4) on node 1 (GetNativeManifest target(s)).
+Building with tools version "4.0".
+Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
+Target "GetNativeManifest" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (entry point):
+Done building target "GetNativeManifest" in project "AMEE.csproj".
+Done Building Project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (GetNativeManifest target(s)).
+
+Done executing task "MSBuild".
+Task "Warning" skipped, due to false condition; ('@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceNonexistent)' != '') was evaluated as ('..\AMEE\AMEE.csproj' != '' and '' != '').
+Done building target "ResolveProjectReferences" in project "AMEE.Tests.csproj".
+Target "ResolveNativeReferences" skipped, due to false condition; ('@(NativeReference)'!='') was evaluated as (''!='').
+Target "GetFrameworkPaths" skipped. Previously built successfully.
+Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
+Target "PrepareForBuild" skipped. Previously built successfully.
+Target "ResolveAssemblyReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "ResolveReferences" depends on it):
+Task "ResolveAssemblyReference"
+  TargetFrameworkMoniker:
+      .NETFramework,Version=v3.5
+  TargetFrameworkMonikerDisplayName:
+      .NETFramework v3.5
+  TargetedRuntimeVersion:
+      v2.0.50727
+  Assemblies:
+      CityIndex.JsonClient
+          HintPath = '..\packages\!CityIndex.JsonClient\lib\net35\CityIndex.JsonClient.dll'
+      Newtonsoft.Json
+          HintPath = '..\packages\Newtonsoft.Json.4.0.7\lib\net35\Newtonsoft.Json.dll'
+      nunit.framework, Version=2.5.10.11092, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL
+          HintPath = '..\packages\NUnit.2.5.10.11092\lib\nunit.framework.dll'
+          SpecificVersion = 'False'
+      nunit.mocks, Version=2.5.10.11092, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL
+          HintPath = '..\packages\NUnit.2.5.10.11092\lib\nunit.mocks.dll'
+          SpecificVersion = 'False'
+      pnunit.framework
+          HintPath = '..\packages\NUnit.2.5.10.11092\lib\pnunit.framework.dll'
+      System
+      System.Xml.Linq
+      System.Data.DataSetExtensions
+      System.Data
+      System.Xml
+      System.Core
+  AssemblyFiles:
+      C:\dev\CityIndex\AMEE\src\AMEE\bin\Debug\AMEE.dll
+      C:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+  CandidateAssemblyFiles:
+  TargetFrameworkDirectories:
+      C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\,C:\Windows\Microsoft.NET\Framework\v3.5\,C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\,C:\Windows\Microsoft.NET\Framework\v3.0\,C:\Windows\Microsoft.NET\Framework\v2.0.50727\
+  InstalledAssemblyTables:
+  IgnoreInstalledAssemblyTable:
+      False
+  SearchPaths:
+      {CandidateAssemblyFiles}
+      {HintPathFromItem}
+      {TargetFrameworkDirectory}
+      {Registry:Software\Microsoft\.NETFramework,v3.5,AssemblyFoldersEx}
+      {AssemblyFolders}
+      {GAC}
+      {RawFileName}
+      bin\Debug\
+  AllowedAssemblyExtensions:
+      .dll
+      .exe
+  AllowedRelatedFileExtensions:
+      .pdb
+      .xml
+  AppConfigFile:
+      
+  AutoUnify:
+      True
+  CopyLocalDependenciesWhenParentReferenceInGac:
+      True
+  FindDependencies:
+      True
+  TargetProcessorArchitecture:
+      x86
+  StateFile:
+      obj\Debug\ResolveAssemblyReference.cache
+  InstalledAssemblySubsetTables:
+  IgnoreInstalledAssemblySubsetTable:
+      False
+  TargetFrameworkSubsets:
+  FullTargetFrameworkSubsetNames:
+      Full
+  ProfileName:
+      
+  ProfileFullFrameworkFolders:
+      C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\
+      C:\Windows\Microsoft.NET\Framework\v3.5\
+      C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\
+      C:\Windows\Microsoft.NET\Framework\v3.0\
+      C:\Windows\Microsoft.NET\Framework\v2.0.50727\
+  LatestTargetFrameworkDirectories:
+  ProfileTablesLocation:
+  Primary reference "AMEE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null".
+      Resolved file path is "C:\dev\CityIndex\AMEE\src\AMEE\bin\Debug\AMEE.dll".
+      Reference found at search path location "C:\dev\CityIndex\AMEE\src\AMEE\bin\Debug\AMEE.dll".
+      Found related file "C:\dev\CityIndex\AMEE\src\AMEE\bin\Debug\AMEE.pdb".
+  Primary reference "mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Resolved file path is "C:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll".
+      Reference found at search path location "C:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll".
+      This reference is not "CopyLocal" because it's a prerequisite file.
+  Primary reference "CityIndex.JsonClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=3accec43ff318fbb".
+      Resolved file path is "C:\dev\CityIndex\AMEE\src\packages\!CityIndex.JsonClient\lib\net35\CityIndex.JsonClient.dll".
+      Reference found at search path location "{HintPathFromItem}".
+      Found related file "C:\dev\CityIndex\AMEE\src\packages\!CityIndex.JsonClient\lib\net35\CityIndex.JsonClient.pdb".
+      Found related file "C:\dev\CityIndex\AMEE\src\packages\!CityIndex.JsonClient\lib\net35\CityIndex.JsonClient.xml".
+  Primary reference "Newtonsoft.Json, Version=4.0.7.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed".
+      Resolved file path is "C:\dev\CityIndex\AMEE\src\packages\Newtonsoft.Json.4.0.7\lib\net35\Newtonsoft.Json.dll".
+      Reference found at search path location "{HintPathFromItem}".
+      Found related file "C:\dev\CityIndex\AMEE\src\packages\Newtonsoft.Json.4.0.7\lib\net35\Newtonsoft.Json.pdb".
+      Found related file "C:\dev\CityIndex\AMEE\src\packages\Newtonsoft.Json.4.0.7\lib\net35\Newtonsoft.Json.xml".
+  Primary reference "nunit.framework, Version=2.5.10.11092, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77".
+      Resolved file path is "C:\dev\CityIndex\AMEE\src\packages\NUnit.2.5.10.11092\lib\nunit.framework.dll".
+      Reference found at search path location "{HintPathFromItem}".
+      Found related file "C:\dev\CityIndex\AMEE\src\packages\NUnit.2.5.10.11092\lib\nunit.framework.xml".
+  Primary reference "nunit.mocks, Version=2.5.10.11092, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77".
+      Resolved file path is "C:\dev\CityIndex\AMEE\src\packages\NUnit.2.5.10.11092\lib\nunit.mocks.dll".
+      Reference found at search path location "{HintPathFromItem}".
+  Primary reference "pnunit.framework, Version=1.0.4109.34242, Culture=neutral, PublicKeyToken=null".
+      Resolved file path is "C:\dev\CityIndex\AMEE\src\packages\NUnit.2.5.10.11092\lib\pnunit.framework.dll".
+      Reference found at search path location "{HintPathFromItem}".
+  Primary reference "System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Resolved file path is "C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.5\System.dll", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.5\System.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\System.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\System.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.0\System.dll", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.0\System.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.exe", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+  Primary reference "System.Xml.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Xml.Linq.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Xml.Linq.exe", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+  Primary reference "System.Data.DataSetExtensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Data.DataSetExtensions.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Data.DataSetExtensions.exe", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+  Primary reference "System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Resolved file path is "C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Data.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Data.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Data.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.5\System.Data.dll", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.5\System.Data.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\System.Data.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\System.Data.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.0\System.Data.dll", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.0\System.Data.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Data.exe", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+  Primary reference "System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Resolved file path is "C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Xml.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Xml.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.5\System.Xml.dll", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.5\System.Xml.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\System.Xml.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\System.Xml.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.0\System.Xml.dll", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.0\System.Xml.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.exe", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+  Primary reference "System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Core.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Core.exe", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+  Dependency "CityIndex.ReflectiveLoggingAdapter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5ebd2761864c547e".
+      Resolved file path is "C:\dev\CityIndex\AMEE\src\packages\!CityIndex.JsonClient\lib\net35\CityIndex.ReflectiveLoggingAdapter.dll".
+      Reference found at search path location "C:\dev\CityIndex\AMEE\src\packages\!CityIndex.JsonClient\lib\net35".
+          For SearchPath "C:\dev\CityIndex\AMEE\src\packages\!CityIndex.JsonClient\lib\net35".
+          Considered "C:\dev\CityIndex\AMEE\src\packages\!CityIndex.JsonClient\lib\net35\CityIndex.ReflectiveLoggingAdapter.exe", but it didn't exist.
+      Required by "CityIndex.JsonClient".
+      Required by "C:\dev\CityIndex\AMEE\src\AMEE\bin\Debug\AMEE.dll".
+      Found related file "C:\dev\CityIndex\AMEE\src\packages\!CityIndex.JsonClient\lib\net35\CityIndex.ReflectiveLoggingAdapter.pdb".
+  Dependency "System.Runtime.Serialization, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\System.Runtime.Serialization.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "C:\dev\CityIndex\AMEE\src\packages\Newtonsoft.Json.4.0.7\lib\net35".
+          Considered "C:\dev\CityIndex\AMEE\src\packages\Newtonsoft.Json.4.0.7\lib\net35\System.Runtime.Serialization.dll", but it didn't exist.
+          Considered "C:\dev\CityIndex\AMEE\src\packages\Newtonsoft.Json.4.0.7\lib\net35\System.Runtime.Serialization.exe", but it didn't exist.
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Runtime.Serialization.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Runtime.Serialization.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.5\System.Runtime.Serialization.dll", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.5\System.Runtime.Serialization.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\System.Runtime.Serialization.exe", but it didn't exist.
+      Required by "Newtonsoft.Json".
+      Required by "C:\dev\CityIndex\AMEE\src\AMEE\bin\Debug\AMEE.dll".
+      Required by "CityIndex.JsonClient".
+      This reference is not "CopyLocal" because it's in a Frameworks directory.
+  Dependency "nunit.core.interfaces, Version=2.5.10.11092, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77".
+      Could not resolve this reference. Could not locate the assembly "nunit.core.interfaces, Version=2.5.10.11092, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+          For SearchPath "C:\dev\CityIndex\AMEE\src\packages\NUnit.2.5.10.11092\lib".
+          Considered "C:\dev\CityIndex\AMEE\src\packages\NUnit.2.5.10.11092\lib\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\dev\CityIndex\AMEE\src\packages\NUnit.2.5.10.11092\lib\nunit.core.interfaces.exe", but it didn't exist.
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.5\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.5\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.0\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v3.0\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v2.0.50727\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\Framework\v2.0.50727\nunit.core.interfaces.exe", but it didn't exist.
+          For SearchPath "{Registry:Software\Microsoft\.NETFramework,v3.5,AssemblyFoldersEx}".
+          Considered "C:\Program Files (x86)\NUnit 2.5.9\bin\net-2.0\framework\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\NUnit 2.5.9\bin\net-2.0\framework\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\PROGRAM FILES (X86)\DEVEXPRESS 2010.1\IDETOOLS\System\RefactorCommonLib\Bin\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\PROGRAM FILES (X86)\DEVEXPRESS 2010.1\IDETOOLS\System\RefactorCommonLib\Bin\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\PROGRAM FILES (X86)\DEVEXPRESS 2010.1\IDETOOLS\System\DXCore\Bin\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\PROGRAM FILES (X86)\DEVEXPRESS 2010.1\IDETOOLS\System\DXCore\Bin\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\PROGRAM FILES (X86)\DEVEXPRESS 2010.1\IDETOOLS\System\CodeRushCommonLib\Bin\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\PROGRAM FILES (X86)\DEVEXPRESS 2010.1\IDETOOLS\System\CodeRushCommonLib\Bin\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\WPF Toolkit\v3.5.50211.1\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\WPF Toolkit\v3.5.50211.1\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\WPF Toolkit\v3.5.50211.1\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\WPF Toolkit\v3.5.50211.1\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\ReferenceAssemblies\v2.0\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\ReferenceAssemblies\v2.0\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v9.0\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v9.0\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v10.0\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v10.0\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\VSTA\v9.0\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\VSTA\v9.0\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files\Reference Assemblies\Microsoft\VSTA30\v9.0\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files\Reference Assemblies\Microsoft\VSTA30\v9.0\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files\Reference Assemblies\Microsoft\VSTA30\v10.0\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files\Reference Assemblies\Microsoft\VSTA30\v10.0\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Office14\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Office14\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Office12\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Office12\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Common\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Common\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\SharePoint\PublicAssemblies\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\SharePoint\PublicAssemblies\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\VBPowerPacks\v10.0\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\VBPowerPacks\v10.0\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\ReferenceAssemblies\v2.0\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\ReferenceAssemblies\v2.0\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\T4 Toolbox\Bin\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\T4 Toolbox\Bin\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Synchronization Services\ADO.NET\v1.0\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Synchronization Services\ADO.NET\v1.0\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SDKs\Microsoft Sync Framework\v1.0\Runtime\ADO.NET\V2.0\x64\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SDKs\Microsoft Sync Framework\v1.0\Runtime\ADO.NET\V2.0\x64\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\SQLite.NET\bin\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\SQLite.NET\bin\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server Compact Edition\v3.5\Desktop\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server Compact Edition\v3.5\Desktop\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 10.0\ReportViewer\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 10.0\ReportViewer\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 9.0\ReportViewer\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 9.0\ReportViewer\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\PROGRAM FILES (X86)\DEVEXPRESS 2010.1\IDETOOLS\System\RefactorCommonLib\Bin\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\PROGRAM FILES (X86)\DEVEXPRESS 2010.1\IDETOOLS\System\RefactorCommonLib\Bin\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PublicAssemblies\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PublicAssemblies\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Common Files\Microsoft Shared\MSEnv\PublicAssemblies\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Common Files\Microsoft Shared\MSEnv\PublicAssemblies\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\Primary Interop Assemblies\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\Primary Interop Assemblies\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\MySQL\MySQL Connector Net 6.2.3\Assemblies\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\MySQL\MySQL Connector Net 6.2.3\Assemblies\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\FSharp\2.0\Runtime\v2.0\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\FSharp\2.0\Runtime\v2.0\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SDKs\Microsoft Sync Framework\v1.0\Runtime\x86\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SDKs\Microsoft Sync Framework\v1.0\Runtime\x86\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SDKs\Expression\Blend 3\Prototyping\Libraries\WPF\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SDKs\Expression\Blend 3\Prototyping\Libraries\WPF\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Expression\Blend 4\Microsoft.Windows.Design.Interaction\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Expression\Blend 4\Microsoft.Windows.Design.Interaction\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Expression\Blend 4\Microsoft.Windows.Design.Extensibility\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Expression\Blend 4\Microsoft.Windows.Design.Extensibility\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SDKs\Expression\Blend 3\Interactivity\Libraries\WPF\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SDKs\Expression\Blend 3\Interactivity\Libraries\WPF\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\PROGRAM FILES (X86)\DEVEXPRESS 2010.1\IDETOOLS\System\DXCore\Bin\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\PROGRAM FILES (X86)\DEVEXPRESS 2010.1\IDETOOLS\System\DXCore\Bin\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\PROGRAM FILES (X86)\DEVEXPRESS 2010.1\IDETOOLS\System\CodeRushCommonLib\Bin\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\PROGRAM FILES (X86)\DEVEXPRESS 2010.1\IDETOOLS\System\CodeRushCommonLib\Bin\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET MVC 2\Assemblies\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET MVC 2\Assemblies\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\NUnit 2.5.9\bin\net-2.0\framework\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\NUnit 2.5.9\bin\net-2.0\framework\nunit.core.interfaces.exe", but it didn't exist.
+          For SearchPath "{AssemblyFolders}".
+          Considered "C:\Program Files (x86)\WPF Toolkit\v3.5.50211.1\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\WPF Toolkit\v3.5.50211.1\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\GtkSharp\2.12\lib\Mono.Posix\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\GtkSharp\2.12\lib\Mono.Posix\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\PROGRAM FILES (X86)\DEVEXPRESS 2010.1\IDETOOLS\System\DXCore\Bin\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\PROGRAM FILES (X86)\DEVEXPRESS 2010.1\IDETOOLS\System\DXCore\Bin\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\100\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\100\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Tasks\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Tasks\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files\SciTech\NetMemProfiler3\Redist\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files\SciTech\NetMemProfiler3\Redist\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\WPF Toolkit\v3.5.50211.1\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\WPF Toolkit\v3.5.50211.1\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\DTS\ForEachEnumerators\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\DTS\ForEachEnumerators\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Windows Installer XML v3.5\SDK\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Windows Installer XML v3.5\SDK\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\GtkSharp\2.12\lib\gtk-sharp-2.0\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\GtkSharp\2.12\lib\gtk-sharp-2.0\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Farm Framework\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Farm Framework\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\DTS\PipelineComponents\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\DTS\PipelineComponents\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\GtkSharp\2.12\lib\Mono.Cairo\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\GtkSharp\2.12\lib\Mono.Cairo\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V2\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V2\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\nunit.core.interfaces.exe", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "C:\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\nunit.core.interfaces.exe", but it didn't exist.
+          For SearchPath "{GAC}".
+          Considered "nunit.core.interfaces, Version=2.5.10.11092, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77", which was not found in the GAC.
+          For SearchPath "bin\Debug\".
+          Considered "bin\Debug\nunit.core.interfaces.dll", but it didn't exist.
+          Considered "bin\Debug\nunit.core.interfaces.exe", but it didn't exist.
+      Required by "pnunit.framework".
+Done executing task "ResolveAssemblyReference".
+Done building target "ResolveAssemblyReferences" in project "AMEE.Tests.csproj".
+Target "ResolveComReferences" skipped, due to false condition; ('@(COMReference)'!='' or '@(COMFileReference)'!='') was evaluated as (''!='' or ''!='').
+Target "AfterResolveReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "ResolveReferences" depends on it):
+Done building target "AfterResolveReferences" in project "AMEE.Tests.csproj".
+Target "ResolveTestReferences" skipped, due to false condition; ('@(Shadow)'!='') was evaluated as (''!='').
+Target "ResolveReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "CoreBuild" depends on it):
+Done building target "ResolveReferences" in project "AMEE.Tests.csproj".
+Target "MarkupCompilePass1" skipped, due to false condition; ('@(Page)' != '' or '@(ApplicationDefinition)' != '' ) was evaluated as ('' != '' or '' != '' ).
+Target "AfterMarkupCompilePass1" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFX.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "PrepareResources" depends on it):
+Done building target "AfterMarkupCompilePass1" in project "AMEE.Tests.csproj".
+Target "MarkupCompilePass2ForMainAssembly" skipped, due to false condition; ('$(_RequireMCPass2ForMainAssembly)' == 'true' ) was evaluated as ('false' == 'true' ).
+Target "FileClassification" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFX.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "PrepareResources" depends on it):
+Task "FileClassifier" skipped, due to false condition; ('@(GeneratedBaml)' != '' or '@(Resource)' != '' or '@(Font)' != '') was evaluated as ('' != '' or '' != '' or '' != '').
+Task "Message" skipped, due to false condition; ('$(MSBuildTargetsVerbose)'=='true') was evaluated as (''=='true').
+Task "Message" skipped, due to false condition; ('$(MSBuildTargetsVerbose)'=='true') was evaluated as (''=='true').
+Done building target "FileClassification" in project "AMEE.Tests.csproj".
+Target "MainResourcesGeneration" skipped, due to false condition; ('@(MainEmbeddedFiles)' != '') was evaluated as ('' != '').
+Target "AssignWinFXEmbeddedResource" skipped, due to false condition; ('@(WinFXEmbeddedResource)' != '') was evaluated as ('' != '').
+Target "AssignTargetPaths" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "PrepareResourceNames" depends on it):
+Task "AssignTargetPath"
+Done executing task "AssignTargetPath".
+Task "AssignTargetPath"
+Done executing task "AssignTargetPath".
+Task "AssignTargetPath"
+Done executing task "AssignTargetPath".
+Task "AssignTargetPath"
+Done executing task "AssignTargetPath".
+Task "AssignTargetPath" skipped, due to false condition; ('@(_DeploymentBaseManifestWithTargetPath)'=='' and '%(None.Extension)'=='.manifest') was evaluated as (''=='' and '.config'=='.manifest').
+Done building target "AssignTargetPaths" in project "AMEE.Tests.csproj".
+Target "AssignTargetPaths" skipped. Previously built successfully.
+Target "SplitResourcesByCulture" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "PrepareResourceNames" depends on it):
+Task "Warning" skipped, due to false condition; ('@(ResxWithNoCulture)'!='') was evaluated as (''!='').
+Task "Warning" skipped, due to false condition; ('@(ResxWithCulture)'!='') was evaluated as (''!='').
+Task "Warning" skipped, due to false condition; ('@(NonResxWithCulture)'!='') was evaluated as (''!='').
+Task "Warning" skipped, due to false condition; ('@(NonResxWithNoCulture)'!='') was evaluated as (''!='').
+Task "AssignCulture"
+Done executing task "AssignCulture".
+Done building target "SplitResourcesByCulture" in project "AMEE.Tests.csproj".
+Target "CreateManifestResourceNames" skipped, due to false condition; ('@(EmbeddedResource)' != '') was evaluated as ('' != '').
+Target "CreateCustomManifestResourceNames" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "PrepareResourceNames" depends on it):
+Done building target "CreateCustomManifestResourceNames" in project "AMEE.Tests.csproj".
+Target "PrepareResourceNames" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "PrepareResources" depends on it):
+Done building target "PrepareResourceNames" in project "AMEE.Tests.csproj".
+Target "ResolveAssemblyReferences" skipped. Previously built successfully.
+Target "SplitResourcesByCulture" skipped. Previously built successfully.
+Target "BeforeResGen" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "ResGen" depends on it):
+Done building target "BeforeResGen" in project "AMEE.Tests.csproj".
+Target "CoreResGen" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "ResGen" depends on it):
+Task "GenerateResource" skipped, due to false condition; ('%(EmbeddedResource.Type)' == 'Resx' and '%(EmbeddedResource.GenerateResource)' != 'false') was evaluated as ('' == 'Resx' and '' != 'false').
+Done building target "CoreResGen" in project "AMEE.Tests.csproj".
+Target "AfterResGen" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "ResGen" depends on it):
+Done building target "AfterResGen" in project "AMEE.Tests.csproj".
+Target "ResGen" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "PrepareResources" depends on it):
+Done building target "ResGen" in project "AMEE.Tests.csproj".
+Target "CompileLicxFiles" skipped, due to false condition; ('@(_LicxFile)'!='') was evaluated as (''!='').
+Target "PrepareRdlFiles" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\ReportingServices\Microsoft.ReportingServices.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "CompileRdlFiles" depends on it):
+Task "CreateItem" skipped, due to false condition; ('%(Extension)'=='.rdlc') was evaluated as (''=='.rdlc').
+Done building target "PrepareRdlFiles" in project "AMEE.Tests.csproj".
+Target "RunRdlCompiler" skipped, due to false condition; ('@(RdlFile)'!='') was evaluated as (''!='').
+Target "CompileRdlFiles" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\ReportingServices\Microsoft.ReportingServices.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "PrepareResources" depends on it):
+Done building target "CompileRdlFiles" in project "AMEE.Tests.csproj".
+Target "PrepareResources" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "CoreBuild" depends on it):
+Done building target "PrepareResources" in project "AMEE.Tests.csproj".
+Target "ResolveKeySource" skipped, due to false condition; ($(SignManifests) == 'true' or $(SignAssembly) == 'true') was evaluated as ( == 'true' or  == 'true').
+Target "ResolveReferences" skipped. Previously built successfully.
+Target "ResolveKeySource" skipped, due to false condition; ($(SignManifests) == 'true' or $(SignAssembly) == 'true') was evaluated as ( == 'true' or  == 'true').
+Target "ResolveComReferences" skipped, due to false condition; ('@(COMReference)'!='' or '@(COMFileReference)'!='') was evaluated as (''!='' or ''!='').
+Target "ResolveNativeReferences" skipped, due to false condition; ('@(NativeReference)'!='') was evaluated as (''!='').
+Target "_SetExternalWin32ManifestProperties" skipped, due to false condition; ('$(GenerateClickOnceManifests)'=='true' or '@(NativeReference)'!='' or '@(ResolvedIsolatedComModules)'!='') was evaluated as (''=='true' or ''!='' or ''!='').
+Target "_SetEmbeddedWin32ManifestProperties" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "SetWin32ManifestProperties" depends on it):
+Task "GetFrameworkPath"
+Done executing task "GetFrameworkPath".
+Done building target "_SetEmbeddedWin32ManifestProperties" in project "AMEE.Tests.csproj".
+Target "SetWin32ManifestProperties" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "Compile" depends on it):
+Done building target "SetWin32ManifestProperties" in project "AMEE.Tests.csproj".
+Target "_GenerateCompileInputs" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "Compile" depends on it):
+Task "Warning" skipped, due to false condition; ('@(ManifestResourceWithNoCulture)'!='' and '%(ManifestResourceWithNoCulture.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+Task "Warning" skipped, due to false condition; ('@(ManifestNonResxWithNoCultureOnDisk)'!='' and '%(ManifestNonResxWithNoCultureOnDisk.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+Done building target "_GenerateCompileInputs" in project "AMEE.Tests.csproj".
+Target "GenerateTargetFrameworkMonikerAttribute" skipped, due to false condition; ('$(GenerateTargetFrameworkAttribute)' == 'true') was evaluated as ('' == 'true').
+Target "_SetTargetFrameworkMonikerAttribute" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.CSharp.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "GenerateTargetFrameworkMonikerAttribute" depends on it):
+Done building target "_SetTargetFrameworkMonikerAttribute" in project "AMEE.Tests.csproj".
+Target "GenerateAdditionalSources" skipped, due to false condition; ('@(AssemblyAttributes)' != '' and '$(GenerateAdditionalSources)' == 'true') was evaluated as ('' != '' and '' == 'true').
+Target "BeforeCompile" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "Compile" depends on it):
+Done building target "BeforeCompile" in project "AMEE.Tests.csproj".
+Target "_TimeStampBeforeCompile" skipped, due to false condition; ('$(RunPostBuildEvent)'=='OnOutputUpdated' or ('$(RegisterForComInterop)'=='true' and '$(OutputType)'=='library')) was evaluated as (''=='OnOutputUpdated' or (''=='true' and 'Library'=='library')).
+Target "_ComputeNonExistentFileProperty" skipped, due to false condition; (('$(BuildingInsideVisualStudio)' == 'true') and (('$(BuildingProject)' == 'false') or ('$(UseHostCompilerIfAvailable)' == 'true'))) was evaluated as (('' == 'true') and (('true' == 'false') or ('true' == 'true'))).
+Target "CoreCompile" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.CSharp.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "Compile" depends on it):
+Building target "CoreCompile" completely.
+Output file "obj\Debug\AMEE.Tests.dll" does not exist.
+Task "Csc"
+  C:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:DEBUG;TRACE /reference:C:\dev\CityIndex\AMEE\src\AMEE\bin\Debug\AMEE.dll /reference:"C:\dev\CityIndex\AMEE\src\packages\!CityIndex.JsonClient\lib\net35\CityIndex.JsonClient.dll" /reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll /reference:C:\dev\CityIndex\AMEE\src\packages\Newtonsoft.Json.4.0.7\lib\net35\Newtonsoft.Json.dll /reference:C:\dev\CityIndex\AMEE\src\packages\NUnit.2.5.10.11092\lib\nunit.framework.dll /reference:C:\dev\CityIndex\AMEE\src\packages\NUnit.2.5.10.11092\lib\nunit.mocks.dll /reference:C:\dev\CityIndex\AMEE\src\packages\NUnit.2.5.10.11092\lib\pnunit.framework.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Data.DataSetExtensions.dll" /reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll /reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Xml.Linq.dll" /debug+ /debug:full /filealign:512 /optimize- /out:obj\Debug\AMEE.Tests.dll /target:library DefraFixture.cs Properties\AssemblyInfo.cs
+  Microsoft (R) Visual C# 2010 Compiler version 4.0.30319.1
+  Copyright (C) Microsoft Corporation. All rights reserved.
+  
+Done executing task "Csc".
+Task "CallTarget" skipped, due to false condition; ('$(TargetsTriggeredByCompilation)' != '') was evaluated as ('' != '').
+Done building target "CoreCompile" in project "AMEE.Tests.csproj".
+Target "_TimeStampAfterCompile" skipped, due to false condition; ('$(RunPostBuildEvent)'=='OnOutputUpdated' or ('$(RegisterForComInterop)'=='true' and '$(OutputType)'=='library')) was evaluated as (''=='OnOutputUpdated' or (''=='true' and 'Library'=='library')).
+Target "AfterCompile" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "Compile" depends on it):
+Done building target "AfterCompile" in project "AMEE.Tests.csproj".
+Target "PrepareResourcesForSatelliteAssemblies" skipped, due to false condition; ('$(UICulture)' != '') was evaluated as ('' != '').
+Target "MergeLocalizationDirectives" skipped, due to false condition; ('@(GeneratedLocalizationFiles)' !='') was evaluated as ('' !='').
+Target "AfterCompileWinFX" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFX.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "_AfterCompileWinFXInternal" depends on it):
+Done building target "AfterCompileWinFX" in project "AMEE.Tests.csproj".
+Target "_AfterCompileWinFXInternal" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFX.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "Compile" depends on it):
+Done building target "_AfterCompileWinFXInternal" in project "AMEE.Tests.csproj".
+Target "Compile" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "CoreBuild" depends on it):
+Done building target "Compile" in project "AMEE.Tests.csproj".
+Target "UnmanagedUnregistration" skipped, due to false condition; ((('$(_AssemblyTimestampBeforeCompile)' != '$(_AssemblyTimestampAfterCompile)' or '$(RegisterForComInterop)' != 'true' or '$(OutputType)' != 'library') or
+                    ('$(_AssemblyTimestampBeforeCompile)' == '')) and
+                   Exists('@(_UnmanagedRegistrationCache)')) was evaluated as ((('' != '' or '' != 'true' or 'Library' != 'library') or
+                    ('' == '')) and
+                   Exists('obj\AMEE.Tests.csproj.UnmanagedRegistration.cache')).
+Target "GenerateSerializationAssemblies" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
+Target "_GenerateSatelliteAssemblyInputs" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "CreateSatelliteAssemblies" depends on it):
+Task "Warning" skipped, due to false condition; ('@(ManifestResourceWithCulture)'!='' and '%(ManifestResourceWithCulture.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+Task "Warning" skipped, due to false condition; ('@(ManifestNonResxWithCultureOnDisk)'!='' and '%(ManifestNonResxWithCultureOnDisk.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+Done building target "_GenerateSatelliteAssemblyInputs" in project "AMEE.Tests.csproj".
+Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(EmbeddedResource->'%(WithCulture)') != '') was evaluated as ( != '').
+Target "GenerateSatelliteAssemblies" skipped, due to false condition; ('@(_SatelliteAssemblyResourceInputs)' != '') was evaluated as ('' != '').
+Target "CreateSatelliteAssemblies" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "CoreBuild" depends on it):
+Done building target "CreateSatelliteAssemblies" in project "AMEE.Tests.csproj".
+Target "GenerateManifests" skipped, due to false condition; ('$(GenerateClickOnceManifests)'=='true' or '@(NativeReference)'!='' or '@(ResolvedIsolatedComModules)'!='') was evaluated as (''=='true' or ''!='' or ''!='').
+Target "GetTargetPath" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "CoreBuild" depends on it):
+Done building target "GetTargetPath" in project "AMEE.Tests.csproj".
+Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(EmbeddedResource->'%(WithCulture)') != '') was evaluated as ( != '').
+Target "_CopyFilesMarkedCopyLocal" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "CopyFilesToOutputDirectory" depends on it):
+Task "Copy"
+  Copying file from "C:\dev\CityIndex\AMEE\src\AMEE\bin\Debug\AMEE.dll" to "bin\Debug\AMEE.dll".
+  Copying file from "C:\dev\CityIndex\AMEE\src\packages\!CityIndex.JsonClient\lib\net35\CityIndex.JsonClient.dll" to "bin\Debug\CityIndex.JsonClient.dll".
+  Copying file from "C:\dev\CityIndex\AMEE\src\packages\Newtonsoft.Json.4.0.7\lib\net35\Newtonsoft.Json.dll" to "bin\Debug\Newtonsoft.Json.dll".
+  Copying file from "C:\dev\CityIndex\AMEE\src\packages\NUnit.2.5.10.11092\lib\nunit.framework.dll" to "bin\Debug\nunit.framework.dll".
+  Copying file from "C:\dev\CityIndex\AMEE\src\packages\NUnit.2.5.10.11092\lib\nunit.mocks.dll" to "bin\Debug\nunit.mocks.dll".
+  Copying file from "C:\dev\CityIndex\AMEE\src\packages\NUnit.2.5.10.11092\lib\pnunit.framework.dll" to "bin\Debug\pnunit.framework.dll".
+  Copying file from "C:\dev\CityIndex\AMEE\src\packages\!CityIndex.JsonClient\lib\net35\CityIndex.ReflectiveLoggingAdapter.dll" to "bin\Debug\CityIndex.ReflectiveLoggingAdapter.dll".
+  Copying file from "C:\dev\CityIndex\AMEE\src\AMEE\bin\Debug\AMEE.pdb" to "bin\Debug\AMEE.pdb".
+  Copying file from "C:\dev\CityIndex\AMEE\src\packages\!CityIndex.JsonClient\lib\net35\CityIndex.JsonClient.pdb" to "bin\Debug\CityIndex.JsonClient.pdb".
+  Copying file from "C:\dev\CityIndex\AMEE\src\packages\!CityIndex.JsonClient\lib\net35\CityIndex.JsonClient.xml" to "bin\Debug\CityIndex.JsonClient.xml".
+  Copying file from "C:\dev\CityIndex\AMEE\src\packages\Newtonsoft.Json.4.0.7\lib\net35\Newtonsoft.Json.pdb" to "bin\Debug\Newtonsoft.Json.pdb".
+  Copying file from "C:\dev\CityIndex\AMEE\src\packages\Newtonsoft.Json.4.0.7\lib\net35\Newtonsoft.Json.xml" to "bin\Debug\Newtonsoft.Json.xml".
+  Copying file from "C:\dev\CityIndex\AMEE\src\packages\NUnit.2.5.10.11092\lib\nunit.framework.xml" to "bin\Debug\nunit.framework.xml".
+  Copying file from "C:\dev\CityIndex\AMEE\src\packages\!CityIndex.JsonClient\lib\net35\CityIndex.ReflectiveLoggingAdapter.pdb" to "bin\Debug\CityIndex.ReflectiveLoggingAdapter.pdb".
+Done executing task "Copy".
+Done building target "_CopyFilesMarkedCopyLocal" in project "AMEE.Tests.csproj".
+Target "AssignTargetPaths" skipped. Previously built successfully.
+Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
+Target "GetCopyToOutputDirectoryItems" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "_CopySourceItemsToOutputDirectory" depends on it):
+Task "MSBuild"
+  Global Properties:
+    Configuration=Debug
+    Platform=AnyCPU
+Project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (4) is building "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (3:5) on node 1 (GetCopyToOutputDirectoryItems target(s)).
+Building with tools version "4.0".
+Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
+Target "GetCopyToOutputDirectoryItems" skipped. Previously built successfully.
+Done Building Project "C:\dev\CityIndex\AMEE\src\AMEE\AMEE.csproj" (GetCopyToOutputDirectoryItems target(s)).
+
+Done executing task "MSBuild".
+Task "AssignTargetPath"
+Done executing task "AssignTargetPath".
+Done building target "GetCopyToOutputDirectoryItems" in project "AMEE.Tests.csproj".
+Target "_CopyOutOfDateSourceItemsToOutputDirectory" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectory)' != '' ) was evaluated as ( '' != '' ).
+Target "_CopyOutOfDateSourceItemsToOutputDirectoryAlways" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectoryAlways)' != '' ) was evaluated as ( '' != '' ).
+Target "_CopySourceItemsToOutputDirectory" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "CopyFilesToOutputDirectory" depends on it):
+Done building target "_CopySourceItemsToOutputDirectory" in project "AMEE.Tests.csproj".
+Target "_CopyAppConfigFile" skipped, due to false condition; ( '@(AppConfigWithTargetPath)' != '' ) was evaluated as ( '' != '' ).
+Target "_CopyManifestFiles" skipped, due to false condition; ( '$(_DeploymentCopyApplicationManifest)'=='true' or '$(GenerateClickOnceManifests)'=='true' ) was evaluated as ( ''=='true' or ''=='true' ).
+Target "_CheckForCompileOutputs" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "CopyFilesToOutputDirectory" depends on it):
+Done building target "_CheckForCompileOutputs" in project "AMEE.Tests.csproj".
+Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
+Target "CopyFilesToOutputDirectory" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "PrepareForRun" depends on it):
+Task "Copy"
+  Copying file from "obj\Debug\AMEE.Tests.dll" to "bin\Debug\AMEE.Tests.dll".
+Done executing task "Copy".
+Task "Message"
+  AMEE.Tests -> C:\dev\CityIndex\AMEE\src\AMEE.Tests\bin\Debug\AMEE.Tests.dll
+Done executing task "Message".
+Task "Copy" skipped, due to false condition; ('@(AddModules)' != '') was evaluated as ('' != '').
+Task "Copy" skipped, due to false condition; ('$(_SGenDllCreated)'=='true') was evaluated as ('false'=='true').
+Task "Copy"
+  Copying file from "obj\Debug\AMEE.Tests.pdb" to "bin\Debug\AMEE.Tests.pdb".
+Done executing task "Copy".
+Task "Copy" skipped, due to false condition; ('$(_DocumentationFileProduced)'=='true') was evaluated as ('false'=='true').
+Task "Copy" skipped, due to false condition; ('@(IntermediateSatelliteAssembliesWithTargetPath)' != '') was evaluated as ('' != '').
+Task "Copy" skipped, due to false condition; ('@(ReferenceComWrappersToCopyLocal)' != '' or '@(ResolvedIsolatedComModules)' != '' or '@(_DeploymentLooseManifestFile)' != '' or '@(NativeReferenceFile)' != '' ) was evaluated as ('' != '' or '' != '' or '' != '' or '' != '' ).
+Done building target "CopyFilesToOutputDirectory" in project "AMEE.Tests.csproj".
+Target "RunCodeAnalysis" skipped, due to false condition; ('$(RunCodeAnalysis)'=='true' or '$(RunCodeAnalysisOnce)'=='true') was evaluated as (''=='true' or ''=='true').
+Target "PrepareForRun" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "CoreBuild" depends on it):
+Done building target "PrepareForRun" in project "AMEE.Tests.csproj".
+Target "UnmanagedRegistration" skipped, due to false condition; ('$(RegisterForComInterop)'=='true' and '$(OutputType)'=='library') was evaluated as (''=='true' and 'Library'=='library').
+Target "_CheckForCompileOutputs" skipped. Previously built successfully.
+Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
+Target "_CleanGetCurrentAndPriorFileWrites" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "IncrementalClean" depends on it):
+Task "ReadLinesFromFile"
+Done executing task "ReadLinesFromFile".
+Task "ConvertToAbsolutePath"
+Done executing task "ConvertToAbsolutePath".
+Task "FindUnderPath"
+  Comparison path is "C:\dev\CityIndex\AMEE\src\AMEE.Tests".
+Done executing task "FindUnderPath".
+Task "FindUnderPath"
+  Comparison path is "bin\Debug\".
+Done executing task "FindUnderPath".
+Task "FindUnderPath"
+  Comparison path is "obj\Debug\".
+Done executing task "FindUnderPath".
+Task "RemoveDuplicates"
+Done executing task "RemoveDuplicates".
+Done building target "_CleanGetCurrentAndPriorFileWrites" in project "AMEE.Tests.csproj".
+Target "IncrementalClean" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "CoreBuild" depends on it):
+Task "FindUnderPath"
+  Comparison path is "bin\Debug\".
+Done executing task "FindUnderPath".
+Task "FindUnderPath"
+  Comparison path is "obj\Debug\".
+Done executing task "FindUnderPath".
+Task "Delete"
+Done executing task "Delete".
+Task "RemoveDuplicates"
+Done executing task "RemoveDuplicates".
+Task "WriteLinesToFile"
+Done executing task "WriteLinesToFile".
+Done building target "IncrementalClean" in project "AMEE.Tests.csproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '' and ('$(RunPostBuildEvent)' != 'OnOutputUpdated' or '$(_AssemblyTimestampBeforeCompile)' != '$(_AssemblyTimestampAfterCompile)')) was evaluated as ('' != '' and ('' != 'OnOutputUpdated' or '' != '')).
+Target "CoreBuild" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "Build" depends on it):
+Done building target "CoreBuild" in project "AMEE.Tests.csproj".
+Target "AfterBuild" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "Build" depends on it):
+Done building target "AfterBuild" in project "AMEE.Tests.csproj".
+Target "Build" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "Rebuild" depends on it):
+Done building target "Build" in project "AMEE.Tests.csproj".
+Target "AfterRebuild" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (target "Rebuild" depends on it):
+Done building target "AfterRebuild" in project "AMEE.Tests.csproj".
+Target "Rebuild" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (entry point):
+Done building target "Rebuild" in project "AMEE.Tests.csproj".
+Done Building Project "C:\dev\CityIndex\AMEE\src\AMEE.Tests\AMEE.Tests.csproj" (Rebuild target(s)).
+
+Done executing task "MSBuild".
+Done building target "Rebuild" in project "AMEE.sln".
+Done Building Project "C:\dev\CityIndex\AMEE\src\AMEE.sln" (Rebuild target(s)).
+
+Done executing task "MSBuild".
+Done building target "Build" in project "build.xml".
+Target "CreateReportDirectories" in file "C:\dev\CityIndex\AMEE\tools\msbuild\TestsAndMetrics.targets.xml" from project "C:\dev\CityIndex\AMEE\src\build.xml" (target "RunTests" depends on it):
+Task "Message"
+  Making the report directories at 'C:\dev\CityIndex\AMEE\src\..\reports'.
+Done executing task "Message".
+Using "RemoveDir" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "RemoveDir"
+  Removing directory "C:\dev\CityIndex\AMEE\src\..\reports".
+Done executing task "RemoveDir".
+Task "MakeDir"
+  Creating directory "C:\dev\CityIndex\AMEE\src\..\reports".
+Done executing task "MakeDir".
+Done building target "CreateReportDirectories" in project "build.xml".
+Target "RunTests" in file "C:\dev\CityIndex\AMEE\tools\msbuild\TestsAndMetrics.targets.xml" from project "C:\dev\CityIndex\AMEE\src\build.xml" (target "Go" depends on it):
+Using "NUnit" task from assembly "C:\Program Files (x86)\MSBuild\MSBuildCommunityTasks\MSBuild.Community.Tasks.dll".
+Task "NUnit"
+  C:\dev\CityIndex\AMEE\src\..\tools\nunit-runner\nunit-console-x86.exe /nologo /noshadow C:\dev\CityIndex\AMEE\src\..\src\AMEE.Tests\bin\Debug\AMEE.Tests.dll /config=Debug /exclude=DependsOnExternalResource /xml=NUnitResults.xml /err=NUnitResults-errors.xml 
+  The "NUnit" task is using "nunit-console-x86.exe" from "C:\dev\CityIndex\AMEE\src\..\tools\nunit-runner\nunit-console-x86.exe".
+  ProcessModel: Default    DomainUsage: Single
+  Execution Runtime: Default
+  Excluded categories: DependsOnExternalResource
+  ....N.
+  Tests run: 4, Errors: 0, Failures: 0, Inconclusive: 0, Time: 7.5084295 seconds
+    Not run: 1, Invalid: 0, Ignored: 1, Skipped: 0
+  
+  Tests Not Run:
+  1) Ignored : AMEE.Tests.DefraFixture.CanUseProfiles
+     i think they are reworking the meaning of profiles
+  
+Done executing task "NUnit".
+Done building target "RunTests" in project "build.xml".
+Target "CreateDropDirectories" in file "C:\dev\CityIndex\AMEE\tools\msbuild\DropsAndPackaging.targets.xml" from project "C:\dev\CityIndex\AMEE\src\build.xml" (target "Package" depends on it):
+Task "Message"
+  Making the drop directories at 'C:\dev\CityIndex\AMEE\src\..\dist'.
+Done executing task "Message".
+Task "RemoveDir" skipped, due to false condition; (Exists('$(DropDirectory)')) was evaluated as (Exists('C:\dev\CityIndex\AMEE\src\..\dist')).
+Task "MakeDir"
+  Creating directory "C:\dev\CityIndex\AMEE\src\..\dist".
+Done executing task "MakeDir".
+Task "MakeDir"
+  Creating directory "C:\dev\CityIndex\AMEE\src\..\dist\lib".
+Done executing task "MakeDir".
+Task "MakeDir"
+  Creating directory "C:\dev\CityIndex\AMEE\src\..\dist\content".
+Done executing task "MakeDir".
+Task "MakeDir"
+  Creating directory "C:\dev\CityIndex\AMEE\src\..\dist\tools".
+Done executing task "MakeDir".
+Done building target "CreateDropDirectories" in project "build.xml".
+Target "CopyMSBuildOutputToDropDirectory" in file "C:\dev\CityIndex\AMEE\tools\msbuild\DropsAndPackaging.targets.xml" from project "C:\dev\CityIndex\AMEE\src\build.xml" (target "Package" depends on it):
+Task "Message"
+  Copying Debug dlls output to C:\dev\CityIndex\AMEE\src\..\dist\lib
+Done executing task "Message".
+Task "Copy"
+  Creating directory "C:\dev\CityIndex\AMEE\src\..\dist\lib\AMEE.Tests\bin\Debug".
+  Copying file from "C:\dev\CityIndex\AMEE\src\..\src\AMEE.Tests\bin\Debug\AMEE.dll" to "C:\dev\CityIndex\AMEE\src\..\dist\lib\AMEE.Tests\bin\Debug\AMEE.dll".
+  Copying file from "C:\dev\CityIndex\AMEE\src\..\src\AMEE.Tests\bin\Debug\AMEE.pdb" to "C:\dev\CityIndex\AMEE\src\..\dist\lib\AMEE.Tests\bin\Debug\AMEE.pdb".
+  Copying file from "C:\dev\CityIndex\AMEE\src\..\src\AMEE.Tests\bin\Debug\AMEE.Tests.dll" to "C:\dev\CityIndex\AMEE\src\..\dist\lib\AMEE.Tests\bin\Debug\AMEE.Tests.dll".
+  Copying file from "C:\dev\CityIndex\AMEE\src\..\src\AMEE.Tests\bin\Debug\AMEE.Tests.pdb" to "C:\dev\CityIndex\AMEE\src\..\dist\lib\AMEE.Tests\bin\Debug\AMEE.Tests.pdb".
+  Copying file from "C:\dev\CityIndex\AMEE\src\..\src\AMEE.Tests\bin\Debug\CityIndex.JsonClient.dll" to "C:\dev\CityIndex\AMEE\src\..\dist\lib\AMEE.Tests\bin\Debug\CityIndex.JsonClient.dll".
+  Copying file from "C:\dev\CityIndex\AMEE\src\..\src\AMEE.Tests\bin\Debug\CityIndex.JsonClient.pdb" to "C:\dev\CityIndex\AMEE\src\..\dist\lib\AMEE.Tests\bin\Debug\CityIndex.JsonClient.pdb".
+  Copying file from "C:\dev\CityIndex\AMEE\src\..\src\AMEE.Tests\bin\Debug\CityIndex.JsonClient.xml" to "C:\dev\CityIndex\AMEE\src\..\dist\lib\AMEE.Tests\bin\Debug\CityIndex.JsonClient.xml".
+  Copying file from "C:\dev\CityIndex\AMEE\src\..\src\AMEE.Tests\bin\Debug\CityIndex.ReflectiveLoggingAdapter.dll" to "C:\dev\CityIndex\AMEE\src\..\dist\lib\AMEE.Tests\bin\Debug\CityIndex.ReflectiveLoggingAdapter.dll".
+  Copying file from "C:\dev\CityIndex\AMEE\src\..\src\AMEE.Tests\bin\Debug\CityIndex.ReflectiveLoggingAdapter.pdb" to "C:\dev\CityIndex\AMEE\src\..\dist\lib\AMEE.Tests\bin\Debug\CityIndex.ReflectiveLoggingAdapter.pdb".
+  Copying file from "C:\dev\CityIndex\AMEE\src\..\src\AMEE.Tests\bin\Debug\Newtonsoft.Json.dll" to "C:\dev\CityIndex\AMEE\src\..\dist\lib\AMEE.Tests\bin\Debug\Newtonsoft.Json.dll".
+  Copying file from "C:\dev\CityIndex\AMEE\src\..\src\AMEE.Tests\bin\Debug\Newtonsoft.Json.pdb" to "C:\dev\CityIndex\AMEE\src\..\dist\lib\AMEE.Tests\bin\Debug\Newtonsoft.Json.pdb".
+  Copying file from "C:\dev\CityIndex\AMEE\src\..\src\AMEE.Tests\bin\Debug\Newtonsoft.Json.xml" to "C:\dev\CityIndex\AMEE\src\..\dist\lib\AMEE.Tests\bin\Debug\Newtonsoft.Json.xml".
+  Copying file from "C:\dev\CityIndex\AMEE\src\..\src\AMEE.Tests\bin\Debug\nunit.framework.dll" to "C:\dev\CityIndex\AMEE\src\..\dist\lib\AMEE.Tests\bin\Debug\nunit.framework.dll".
+  Copying file from "C:\dev\CityIndex\AMEE\src\..\src\AMEE.Tests\bin\Debug\nunit.framework.xml" to "C:\dev\CityIndex\AMEE\src\..\dist\lib\AMEE.Tests\bin\Debug\nunit.framework.xml".
+  Copying file from "C:\dev\CityIndex\AMEE\src\..\src\AMEE.Tests\bin\Debug\nunit.mocks.dll" to "C:\dev\CityIndex\AMEE\src\..\dist\lib\AMEE.Tests\bin\Debug\nunit.mocks.dll".
+  Copying file from "C:\dev\CityIndex\AMEE\src\..\src\AMEE.Tests\bin\Debug\pnunit.framework.dll" to "C:\dev\CityIndex\AMEE\src\..\dist\lib\AMEE.Tests\bin\Debug\pnunit.framework.dll".
+  Creating directory "C:\dev\CityIndex\AMEE\src\..\dist\lib\AMEE\bin\Debug".
+  Copying file from "C:\dev\CityIndex\AMEE\src\..\src\AMEE\bin\Debug\AMEE.dll" to "C:\dev\CityIndex\AMEE\src\..\dist\lib\AMEE\bin\Debug\AMEE.dll".
+  Copying file from "C:\dev\CityIndex\AMEE\src\..\src\AMEE\bin\Debug\AMEE.pdb" to "C:\dev\CityIndex\AMEE\src\..\dist\lib\AMEE\bin\Debug\AMEE.pdb".
+  Copying file from "C:\dev\CityIndex\AMEE\src\..\src\AMEE\bin\Debug\CityIndex.JsonClient.dll" to "C:\dev\CityIndex\AMEE\src\..\dist\lib\AMEE\bin\Debug\CityIndex.JsonClient.dll".
+  Copying file from "C:\dev\CityIndex\AMEE\src\..\src\AMEE\bin\Debug\CityIndex.JsonClient.pdb" to "C:\dev\CityIndex\AMEE\src\..\dist\lib\AMEE\bin\Debug\CityIndex.JsonClient.pdb".
+  Copying file from "C:\dev\CityIndex\AMEE\src\..\src\AMEE\bin\Debug\CityIndex.JsonClient.xml" to "C:\dev\CityIndex\AMEE\src\..\dist\lib\AMEE\bin\Debug\CityIndex.JsonClient.xml".
+  Copying file from "C:\dev\CityIndex\AMEE\src\..\src\AMEE\bin\Debug\CityIndex.ReflectiveLoggingAdapter.dll" to "C:\dev\CityIndex\AMEE\src\..\dist\lib\AMEE\bin\Debug\CityIndex.ReflectiveLoggingAdapter.dll".
+  Copying file from "C:\dev\CityIndex\AMEE\src\..\src\AMEE\bin\Debug\CityIndex.ReflectiveLoggingAdapter.pdb" to "C:\dev\CityIndex\AMEE\src\..\dist\lib\AMEE\bin\Debug\CityIndex.ReflectiveLoggingAdapter.pdb".
+  Copying file from "C:\dev\CityIndex\AMEE\src\..\src\AMEE\bin\Debug\Newtonsoft.Json.dll" to "C:\dev\CityIndex\AMEE\src\..\dist\lib\AMEE\bin\Debug\Newtonsoft.Json.dll".
+  Copying file from "C:\dev\CityIndex\AMEE\src\..\src\AMEE\bin\Debug\Newtonsoft.Json.pdb" to "C:\dev\CityIndex\AMEE\src\..\dist\lib\AMEE\bin\Debug\Newtonsoft.Json.pdb".
+  Copying file from "C:\dev\CityIndex\AMEE\src\..\src\AMEE\bin\Debug\Newtonsoft.Json.xml" to "C:\dev\CityIndex\AMEE\src\..\dist\lib\AMEE\bin\Debug\Newtonsoft.Json.xml".
+Done executing task "Copy".
+Done building target "CopyMSBuildOutputToDropDirectory" in project "build.xml".
+Target "CopyLicenseToAllDirectories" in file "C:\dev\CityIndex\AMEE\tools\msbuild\DropsAndPackaging.targets.xml" from project "C:\dev\CityIndex\AMEE\src\build.xml" (target "Package" depends on it):
+Task "Message"
+  Copying the License to all drop directories
+Done executing task "Message".
+Task "Copy"
+  Copying file from "C:\dev\CityIndex\AMEE\src\..\LICENSE.txt" to "C:\dev\CityIndex\AMEE\src\..\dist\LICENSE.txt".
+Done executing task "Copy".
+Done building target "CopyLicenseToAllDirectories" in project "build.xml".
+Target "CopyReportsToDropFolder" in file "C:\dev\CityIndex\AMEE\tools\msbuild\DropsAndPackaging.targets.xml" from project "C:\dev\CityIndex\AMEE\src\build.xml" (target "Package" depends on it):
+Task "Message"
+  Copying the Reports to drop directories
+Done executing task "Message".
+Task "Copy"
+Done executing task "Copy".
+Done building target "CopyReportsToDropFolder" in project "build.xml".
+Target "Package" in file "C:\dev\CityIndex\AMEE\tools\msbuild\DropsAndPackaging.targets.xml" from project "C:\dev\CityIndex\AMEE\src\build.xml" (target "Go" depends on it):
+Task "Message"
+  Packaging with NuGet
+Done executing task "Message".
+Task "Copy"
+  Copying file from "C:\dev\CityIndex\AMEE\src\..\src\AMEE.nuspec" to "C:\dev\CityIndex\AMEE\src\..\dist\AMEE.nuspec".
+Done executing task "Copy".
+Task "Exec"
+  "C:\Program Files (x86)\nuget\nuget.exe" pack C:\dev\CityIndex\AMEE\src\..\dist\AMEE.nuspec
+  Attempting to build package from 'AMEE.nuspec'.
+  Successfully created package 'C:\dev\CityIndex\AMEE\dist\AMEE.1.0.0-bleeding-0.nupkg'.
+Done executing task "Exec".
+Done building target "Package" in project "build.xml".
+Target "Go" in project "C:\dev\CityIndex\AMEE\src\build.xml" (entry point):
+Done building target "Go" in project "build.xml".
+Done Building Project "C:\dev\CityIndex\AMEE\src\build.xml" (default targets).
+
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:11.76

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\dev\CityIndex\AMEE\src\..\src\AMEE.Tests\bin\Debug\AMEE.Tests.dll" total="4" errors="0" failures="0" not-run="1" inconclusive="0" ignored="1" skipped="0" invalid="0" date="2012-02-15" time="15:49:46">
+  <environment nunit-version="2.5.7.10213" clr-version="4.0.30319.239" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\dev\CityIndex\AMEE\reports" machine-name="SKY-W701" user="Sky" user-domain="Sky-W701" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\dev\CityIndex\AMEE\src\..\src\AMEE.Tests\bin\Debug\AMEE.Tests.dll" executed="True" result="Success" success="True" time="7.508" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="AMEE" executed="True" result="Success" success="True" time="7.505" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="7.503" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="DefraFixture" executed="True" result="Success" success="True" time="7.503" asserts="0">
+                <results>
+                  <test-case name="AMEE.Tests.DefraFixture.CanCalculate" executed="True" result="Success" success="True" time="4.320" asserts="1" />
+                  <test-case name="AMEE.Tests.DefraFixture.CanGetTransportDefraPassenger" executed="True" result="Success" success="True" time="1.576" asserts="6" />
+                  <test-case name="AMEE.Tests.DefraFixture.CanGrabValue" executed="True" result="Success" success="True" time="0.401" asserts="1" />
+                  <test-case name="AMEE.Tests.DefraFixture.CanUseProfiles" executed="False" result="Ignored">
+                    <reason>
+                      <message><![CDATA[i think they are reworking the meaning of profiles]]></message>
+                    </reason>
+                  </test-case>
+                  <test-case name="AMEE.Tests.DefraFixture.Home_Developer_Documentation_GetEmissionFactors" executed="True" result="Success" success="True" time="1.195" asserts="3" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
